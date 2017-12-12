@@ -15,14 +15,14 @@
     <meta name="twitter:title" content="{{ .Title }}">
     <meta name="twitter:creator" content="@AppsCodeHQ">
     <meta name="twitter:description" content="{{ $.Param "description" }}">
-    <meta name="twitter:image:src" content="{{ default "https://kubedb.com/images/Atwitter.jpg" ($.Param "image") }}">
+    <meta name="twitter:image:src" content="{{ default "https://kubepack.com/images/Atwitter.jpg" ($.Param "image") }}">
 
     <!-- Facebook -->
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:description" content="{{ $.Param "description" }}">
     <meta property="og:site_name" content="AppsCode">
-    <meta property="og:image" content="{{ default "https://kubedb.com/images/OpenGraph.png" ($.Param "image") }}">
+    <meta property="og:image" content="{{ default "https://kubepack.com/images/OpenGraph.png" ($.Param "image") }}">
     <meta property="og:type" content="article">
 
     {{ if .RSSLink }}

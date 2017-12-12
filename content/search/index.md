@@ -1,4 +1,4 @@
 ---
-title: Search Results | KubeDB
-header: Run production-grade databases easily on Kubernetes
+title: Search Results | KubePack
+header: Secure Lightweight Kubernetes Package Manager
 ---
