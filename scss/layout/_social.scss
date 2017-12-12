@@ -1,0 +1,51 @@
+#social {
+  // background: $social-bg;
+  background: linear-gradient(45deg,#7272e9,#4d4dcb);
+  padding: 30px;
+  text-align:center;
+  .social-list {
+    ul {
+      padding: 0;
+      margin: 0;
+      > li {
+        list-style: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 24%;
+        display: inline-block;
+        a {
+          border: 0;
+          font-size: 18px;
+          color: $social-list-color;
+          text-decoration: none;
+          &:hover {
+            text-decoration: none;
+          }
+          img {
+            float: left;
+            margin-right: .5em;
+            margin-bottom: .5em;
+            vertical-align: middle;
+          }
+          .social-name {
+            text-align: left;
+            h4 {
+              color:$social-list-social-name;
+              margin: 0;
+              text-transform: capitalize;
+            }
+            p {
+              color: $social-list-social-color;
+              font-size: 13px;
+              display: block;
+              margin-bottom: 0;
+            }
+          }
+        }
+        &:first-child {
+          border: 0;
+        }
+      }
+    }
+  }
+}

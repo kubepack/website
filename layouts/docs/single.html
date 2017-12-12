@@ -1,0 +1,148 @@
+{{ partial "header.html" .}}
+
+{{ $currentNode := . }}
+{{ $menu := .Params.menu_name }}
+<section id="inner-header">
+    {{ partial "menu.html" . }}
+    <div class="header text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ title (default .Title (index .Params "header")) }}</h1>
+                    <p>{{ $.Param "description" }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "docs-section-menu.html" . }}
+
+<section class="default">
+  <div class="container">
+    
+    <div class="default-sidbar">
+      <div class="row">
+       <div class="default-sidbar-left">
+         <div class="col-12">
+
+         <!--  Custom Google Search -->
+         <div id="custom-search-input">
+              <div class="input-group">
+                <input type="text" class="search-query form-control" placeholder="Search" onkeydown="if (event.keyCode==13) window.location.replace('/search/?q=' + this.value)" />
+                   <span class="input-group-btn">
+                       <button class="btn btn-danger" type="button">
+                         <i class="fa fa-search" onclick="window.location.replace('/search/?q=' + $('.search-query').val())"></i>
+                       </button>
+                   </span>
+              </div>
+          </div>
+         <!-- End  Custom Google Search -->
+
+
+            {{ if isset .Params "menu_name" }}
+              {{ $sectionMenuId := .Params.section_menu_id }}
+                {{ range (index .Site.Menus .Params.menu_name) }}
+                  {{ if eq $sectionMenuId .Identifier }}
+                    {{ if .HasChildren }}
+                      {{ $hasPreDropdown := eq (string .Pre) "dropdown" }}
+
+                      {{ $.Scratch.Set "leftMenuHeadline" .Name }}
+                      {{ range .Children }}
+                        {{ if and ( and .HasChildren $hasPreDropdown) ($currentNode.HasMenuCurrent $menu .)  }}
+
+                          {{ $.Scratch.Set "leftMenuHeadline" .Name }}
+                        
+                        {{ end }}
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+            {{ end }}
+
+          <div class="current-page">
+            <a class="item">{{ $.Scratch.Get "leftMenuHeadline" }}</a>
+          </div>
+          <!-- end left menu headline -->
+
+          {{ if isset .Params "menu_name" }}
+            {{ $sectionMenuId := .Params.section_menu_id }}
+       
+            <!-- first child -> section menu --> 
+            {{ range (index .Site.Menus .Params.menu_name ) }}
+            
+              {{ if eq $sectionMenuId .Identifier }}
+                {{ if .HasChildren }}
+                  {{ $hasPreDropdown := eq (string .Pre) "dropdown" }}
+
+                  <!-- second child -> left menu level 1-->
+                  {{ range .Children }}
+                      
+                      {{ if .HasChildren }}
+                        {{ if $hasPreDropdown }}
+                          {{ if $currentNode.HasMenuCurrent $menu . }}
+                            <ul class="sub-nav">
+
+                              <!-- third child -> left menu level 1  -->
+                              {{ range .Children }}
+{{ printf "%v" . }}
+                                <li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}> {{ .Name }}</a></li>
+                              {{ end }}
+
+                            </ul>
+                          {{ end }}
+                        {{ else }}
+                          <ul class="sub-nav">
+                            <li>
+
+                              <!-- second child -> left menu level 1-->
+                              <a href="#{{ .Identifier }}" data-toggle="collapse" aria-expanded="false" aria-controls="{{ .Identifier }}">
+                                <i class="fa fa-angle-double-right"></i>{{ .Name }}
+                              </a>
+
+                              <ul class="sub-nav collapse in {{if $currentNode.HasMenuCurrent $menu . }} show {{end}}" id="{{ .Identifier }}">
+
+                                <!-- third child -> left menu level 2 -->
+                                {{ range .Children }}
+                                  <li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}><i class="fa fa-stop"></i> {{ .Name }}</a></li>
+                                {{ end }}
+
+                              </ul>
+                            </li>
+                          </ul>
+                        
+                        {{ end }}
+
+                      {{ else }}
+                        <ul><li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}>{{ .Name }}</a></li></ul>
+                      {{ end }} <!-- end of menu item rendering -->
+                  {{ end }}
+                  <!-- end second child -> left level 1-->
+                  
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            <!-- end first child -> section menu -->
+          {{ end }} 
+         </div>
+       </div>
+      </div>
+    </div> 
+
+    <div class="default-content">
+      <div class="row">
+        <div class="col-12">
+          <article class="article">
+            {{ .Content }}
+          </article>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    {{ partial "subscribers.html" . }}
+
+
+    {{ partial "footer.html" . }}

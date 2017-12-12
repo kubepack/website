@@ -1,0 +1,126 @@
+{{ partial "header.html" . }}
+
+
+<section id="inner-header" class="pricing-page">
+    {{ partial "menu.html" . }}
+    <div class="header text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ title (default .Title (index .Params "header")) }}</h1>
+                    <p>{{ $.Param "description" }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pricing-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pricing-plane">
+                    <div class="basic-plane">
+                        <div class="plan-card-header">
+                            <h2>Basic</h2>
+                            <p>Unleash the full power of ContainerCloud</p>
+                        </div>
+                        <div class="plan-card-body">
+                            <h1>2.9</h1>
+                            <span>/mo</span>
+                        </div>
+                        <div class="plan-card-footer">
+                            <ul>
+                                <li> <img src="/images/bs-success.svg"> Billed Monthly, Per User</li>
+                                <li><img src="/images/bs-success.svg">No setup, monthly, or hidden fees</li>
+                                <li> <img src="/images/bs-success.svg">Pay only for what you use</li>
+                                <li><img src="/images/bs-success.svg">Real-time fee reporting</li>
+                                <li><img src="/images/bs-success.svg">(cancel anytime)</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="plan-button">
+                            Buy CC Power
+                        </a>
+                    </div>
+                    <div class="enrichment-plane">
+                        <div class="plan-card-header">
+                            <h2>Enrichment</h2>
+                            <p>Unleash the full power of ContainerCloud</p>
+                        </div>
+                        <div class="plan-card-body">
+                            <h1>3.9</h1>
+                            <span>/mo</span>
+                        </div>
+                        <div class="plan-card-footer">
+                            <ul>
+                                <li>
+                                    <img src="/images/en-success.svg">
+                                    Billed Monthly, Per User
+                                </li>
+                                <li><img src="/images/en-success.svg">No setup, monthly, or hidden fees</li>
+                                <li> <img src="/images/en-success.svg">Pay only for what you use</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="plan-button">
+                            Buy CC Power
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="plane-includes">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="includes">
+                    <div class="plane-includes-basic">
+                        <div class="plane-includes-title">
+                            <h2>Basic includes</h2>
+                            <P>all of these great features</P>
+                        </div>
+                        <div class="features-list basic">
+                            <ul>
+                                <li> <i class="fa fa-check-circle"></i> Kubernetes (AWS)</li>
+                                <li> <i class="fa fa-check-circle"></i> Kubernetes (GCE)</li>
+                                <li> <i class="fa fa-check-circle"></i> Kubernetes (Azure)</li>
+                                <li> <i class="fa fa-check-circle"></i> Databases</li>
+                                <li> <i class="fa fa-check-circle"></i> Email Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plane-includes-basic">
+                        <div class="plane-includes-title">
+                            <h2>Enrichment includes</h2>
+                            <P>all of these great features</P>
+                        </div>
+                        <div class="features-list enrichment">
+                            <ul>
+                                <li> <i class="fa fa-check-circle"></i> Kubernetes (AWS)</li>
+                                <li> <i class="fa fa-check-circle"></i> Kubernetes (GCE)</li>
+                                <li> <i class="fa fa-check-circle"></i> Kubernetes (Azure)</li>
+                                <li> <i class="fa fa-check-circle"></i> Databases</li>
+                                <li> <i class="fa fa-check-circle"></i> Web Dashboard (Pharm)</li>
+                                <li> <i class="fa fa-check-circle"></i> Monitoring (Grafana)</li>
+                                <li> <i class="fa fa-check-circle"></i> Logging (Kibana)</li>
+                                <li> <i class="fa fa-check-circle"></i> Alerts (Icinga)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{{ partial "signin.html" . }}
+
+
+{{ partial "faq.html" . }}
+
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,130 @@
+
+
+<!--====================================
+            Start header arewa
+=====================================-->
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer-left">
+                    <div class="ft-logo">
+                        <div class="ft-copy-right">
+                            <P> KubePack is released under <span> <a href="https://github.com/kubepack/pack/blob/master/LICENSE" target="_blank">Apache 2 Licence</a> </span></P>
+                        </div>
+                        <!--<img src="/images/ac-logo.svg">-->
+                        <!--AppsCode Inc.-->
+                        <!--<span> @ 2017</span>-->
+                        <div class="github-star">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="white" class="mx-1 v-align-middle" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+                            <span> with</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="white" class="mx-1 v-align-middle" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M11.2 3c-.52-.63-1.25-.95-2.2-1-.97 0-1.69.42-2.2 1-.51.58-.78.92-.8 1-.02-.08-.28-.42-.8-1-.52-.58-1.17-1-2.2-1-.95.05-1.69.38-2.2 1-.52.61-.78 1.28-.8 2 0 .52.09 1.52.67 2.67C1.25 8.82 3.01 10.61 6 13c2.98-2.39 4.77-4.17 5.34-5.33C11.91 6.51 12 5.5 12 5c-.02-.72-.28-1.39-.8-2.02V3z"></path></svg>
+                            <span>by </span>
+                            <a class="ac-logo" target="_blank" href="https://appscode.com/">
+                                <img src="/images/ac-logo-icon.svg">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer-right">
+                    <div class="ft-nav-menu">
+                        <ul>
+                            <li class="hidden"><a class="issue-file" target="_blank" href="{{.Site.Params.issues_url}}"> <i class="fa fa-github"></i>File an Issue</a></li>
+                            <li>
+                                <!-- Place this tag where you want the button to render. -->
+                                <a class="github-button" href="https://github.com/kubepack/pack" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End our Project -->
+
+
+
+<script type="text/javascript">
+    $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+    var amountScrolled = 100;
+
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('a.back-to-top').fadeIn('slow');
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+        }
+    });
+
+    $('a.back-to-top').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+        return false;
+    });
+</script>
+
+
+
+
+<!--new cookie-->
+
+<div class="ac-cookies collapse cookie-notice">
+    <button class="ac-cookies-ok accept-cookie">OK</button>
+    <span class="ac-cookies-message">
+        We use cookies to ensure that we give you the best experience on our website. By using this site, you agree to its use of cookies.
+        <!-- <a href="/legal/privacy-policy/" target="_blank" role="button">Learn more</a> -->
+    </span>
+</div>
+
+
+</div><!-- End Page Wrapper, Full Width -->
+
+<!-- Change cookie name everytime privacy policy changes. -->
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        if (Cookies && Cookies.get('COOKIE_ACK') !== 'yes') {
+            $(".cookie-notice").collapse('show');
+        }
+        $(".accept-cookie").click(function() {
+            Cookies.set('COOKIE_ACK', 'yes', { expires: 3650 });
+            $(".cookie-notice").collapse('hide');
+        });
+    });
+</script>
+
+
+<!--Start of Google Analytics Script-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62096468-12', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!--Start of Google Analytics Script-->
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5a2f7adb5d3202175d9b7af9/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>

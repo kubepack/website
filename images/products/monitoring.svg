@@ -1,0 +1,98 @@
+ <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 100.6 50.3">
+            <style>
+              .InfluxDB-0{fill:#3A5997;} .InfluxDB-1{fill:#6E97D7;} .InfluxDB-2{fill:#88ACE5;} .InfluxDB-3{fill:#99B9E2;} .InfluxDB-4{fill:#DEEDFF;} .InfluxDB-5{fill:#EF5A29;} .InfluxDB-6{fill:#00A59B;} .InfluxDB-7{fill:#F5921E;} .InfluxDB-8{fill:#F9AE40;} .InfluxDB-9{fill:#EFF5FB;} .InfluxDB-10{fill:url(#SVGID_1_);} .InfluxDB-11{fill:#E3E3E3;} .InfluxDB-12{fill:#FAFAFA;} .InfluxDB-13{fill:url(#SVGID_2_);} .InfluxDB-14{fill:url(#SVGID_3_);} .InfluxDB-15{fill:url(#SVGID_4_);} .InfluxDB-16{fill:url(#SVGID_5_);} .InfluxDB-17{fill:url(#SVGID_6_);} .InfluxDB-18{fill:#84A9D8;} .InfluxDB-19{fill:none;stroke:#DBE4EF;stroke-width:0.5;stroke-miterlimit:10;} .InfluxDB-20{fill:#FFFFFF;} .InfluxDB-21{fill:none;stroke:#AEB1B6;stroke-miterlimit:10;}
+            </style>
+            <g class="lm-color">
+                  <path d="M60.8 17.3H65v4.2h-4.2z" class="InfluxDB-0 monitor-influx-9 "/>
+                  <path d="M65 17.3h4.2v4.2H65z" class="InfluxDB-1 monitor-influx-8"/>
+                  <path d="M69.1 17.3h4.2v4.2h-4.2z" class="InfluxDB-2"/>
+                  <path d="M73.3 17.3h4.2v4.2h-4.2z" class="InfluxDB-3"/>
+                  <path d="M77.5 17.3h4.2v4.2h-4.2z" class="InfluxDB-4"/>
+                  <path d="M81.6 17.3h4.2v4.2h-4.2zm4.2 0H90v4.2h-4.2z" class="InfluxDB-4"/>
+                  <path d="M60.8 25.7H65v4.2h-4.2z" class="InfluxDB-5 monitor-influx-9"/>
+                  <path d="M60.8 21.5H65v4.2h-4.2zm4.2 0h4.2v4.2H65z" class="InfluxDB-6 monitor-influx-6"/>
+                  <path d="M69.1 21.5h4.2v4.2h-4.2zm4.2 0h4.2v4.2h-4.2zm4.2 0h4.2v4.2h-4.2z" class="InfluxDB-6"/>
+                  <path d="M81.6 21.5h4.2v4.2h-4.2zm4.2 0H90v4.2h-4.2zm4.2 0h4.2v4.2H90z" class="InfluxDB-6"/>
+                  <path d="M94.1 21.5h4.2v4.2h-4.2z" class="InfluxDB-6 monitor-influx-4"/>
+                  <path d="M65 25.7h4.2v4.2H65z" class="InfluxDB-5"/>
+                  <path d="M69.1 25.7h4.2v4.2h-4.2zm4.2 0h4.2v4.2h-4.2zm4.2 0h4.2v4.2h-4.2z" class="InfluxDB-5 monitor-influx-3 "/>
+                  <path d="M81.6 25.7h4.2v4.2h-4.2z" class="InfluxDB-5 monitor-influx-7"/>
+                  <path d="M60.8 29.8H65V34h-4.2zm4.2 0h4.2V34H65z" class="InfluxDB-7"/>
+                  <path d="M69.1 29.8h4.2V34h-4.2zm4.2 0h4.2V34h-4.2zm4.2 0h4.2V34h-4.2z" class="InfluxDB-7"/>
+                  <path d="M60.8 34H65v4.2h-4.2zm4.2 0h4.2v4.2H65z" class="InfluxDB-8"/>
+                  <path d="M69.1 34h4.2v4.2h-4.2z" class="InfluxDB-8 monitor-influx-1"/>
+                  <path d="M40.2 37.1c-.6 1.2-2 1.8-3.2 1.2-1.2-.6-1.2-1.8-.6-3L41 23.6c.6-1.2 2-1.8 3.2-1.2 1.2.6 1.8 2 1.2 3.2l-5.2 11.5z" class="InfluxDB-9"/>
+                  <path d="M44.4 28.1l1.1-2.4c.6-1.2 0-2.7-1.2-3.2-1.2-.6-2.7 0-3.2 1.2l-.8 1.9c1.4.8 2.8 1.6 4.1 2.5z" class="InfluxDB-1"/>
+            </g>
+            <linearGradient id="SVGID_1_" x1="30.054" x2="40.399" y1="-2.729" y2="-2.729" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 35.183)">
+              <stop offset="0" stop-color="#FFF"/>
+              <stop offset="1" stop-color="#EFF5FB"/>
+            </linearGradient>
+            <path d="M32.9 41.6c-1.2.6-2.1.8-2.7-.4-.6-1.2.4-2.1 1.6-2.7L37 34c1.2-.6 2.7 0 3.2 1.2.6 1.2 0 2.7-1.2 3.2-.1.1-4.6 2.5-6.1 3.2z" class="InfluxDB-10"/>
+            <path d="M52 45.1c0 .6-.6 1.3-1.3 1.3l-7.9.2c-.6 0-1.3-.6-1.3-1.2l.1-21.3c0-.9.5-1.7 1.1-1.7l7.3-.2c.6 0 1.1.7 1.1 1.7l.9 21.2z" class="InfluxDB-2"/>
+            <path d="M44.8 22.5c-.3 1 .4 2.1 1.4 2.3 1 .3 2.1-.4 2.3-1.4l1-4c.3-1-.4-2.1-1.4-2.3-1-.3-2.1.4-2.3 1.4l-1 4z" class="InfluxDB-11"/>
+            <path d="M42.8 15.6c0 3.3 2 5.4 5.3 5.4s6-1.6 6.4-5.4c.1-1.2.4-4.9.4-4.9 0-3.3-2.6-6-5.9-6-3.3 0-6 2.6-6 5.9l-.2 5z" class="InfluxDB-12"/>
+            <path d="M44 12.6c-.6.7-1.4 1.2-1.4 1.2-.7-.6.3.4-.5-.3l.1-4.4c0-3.5 2.5-6.3 6.5-6.4 4.2-.1 6.6 2.2 6 7.1-.9-2-3.2-2.7-5.7-2.7-.8 0-3.1-1.4-3.1-.5-.3 3.5-.9 4.8-1.9 6z" class="InfluxDB-0"/>
+            <path d="M47.1 12.7c0-.3.3-.6.6-.6s.5.2.6.5v-1.5c0-.3-.3-.6-.6-.6s-.6.3-.6.6v1.6zm4.9.4c0-.3.3-.6.6-.6s.5.2.6.5v-1.5c0-.3-.3-.6-.6-.6s-.6.3-.6.6v1.6zm-3.1 6.5c.3.1.6-.1.7-.4.1-.3-.1-.6-.4-.7l-1.2-.3c-.3-.1-.6.1-.7.4-.1.3.1.6.4.7l1.2.3z" class="InfluxDB-0"/>
+            <path d="M43 11h.4v3.4H43c-.9 0-1.8-.8-1.8-1.8S42 11 43 11z" class="InfluxDB-11"/>
+            <path d="M45.8 6.5s5.8 3.8 10.4 4.2c0 0 .7-7.8-7.4-7.9-4 1.6-3 3.7-3 3.7zm-.2-3s-3-4.4-6.8-2.3c-4.1 2.2.9 8.5-3.3 11.5-2.1 1.6-3.2.2-3.2.2s1.3 3.6 4.7 3.1c3.4-.5 4.2-2.8 3.9-8.5-.2-3.4 3-2.4 3-2.4l1.7-1.6z" class="InfluxDB-0"/>
+            <linearGradient id="SVGID_2_" x1="48.432" x2="55.548" y1="4.995" y2="4.995" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 35.183)">
+              <stop offset="0" stop-color="#FFF"/>
+              <stop offset="1" stop-color="#EFF5FB"/>
+            </linearGradient>
+            <path d="M55.5 35.2c.3 1.3-.6 2.6-1.9 2.9-1.3.3-2-.8-2.3-2.1l-2.8-10.8c-.3-1.3.6-2.6 1.9-2.9 1.3-.3 2.6.6 2.9 1.9l2.2 11z" class="InfluxDB-13"/>
+            <path d="M48.6 25.8c1.5-.6 3-1.2 4.6-1.6v-.1c-.3-1.3-1.6-2.2-2.9-1.9-1.3.3-2.2 1.6-1.9 2.9l.2.7z" class="InfluxDB-1"/>
+            <linearGradient id="SVGID_3_" x1="27.634" x2="32.062" y1="-6.309" y2="-6.309" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 35.183)">
+              <stop offset="0" stop-color="#FFF"/>
+              <stop offset="1" stop-color="#EFF5FB"/>
+            </linearGradient>
+            <circle cx="29.8" cy="41.5" r="2.2" class="InfluxDB-14"/>
+            <linearGradient id="SVGID_4_" x1="45.106" x2="55.528" y1="-2.079" y2="-2.079" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 35.183)">
+              <stop offset="0" stop-color="#FFF"/>
+              <stop offset="1" stop-color="#EFF5FB"/>
+            </linearGradient>
+            <path d="M48 40.9c-1.2.6-2.1.8-2.7-.4-.6-1.2-.1-.8.7-1.8 1.4-1.7 6-5.3 6-5.3 1.2-.6 2.7 0 3.2 1.2.6 1.2 0 2.7-1.2 3.2.1 0-4.5 2.3-6 3.1z" class="InfluxDB-15"/>
+            <linearGradient id="SVGID_5_" x1="42.672" x2="47.101" y1="-5.609" y2="-5.609" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 -1 0 35.183)">
+              <stop offset="0" stop-color="#FFF"/>
+              <stop offset="1" stop-color="#EFF5FB"/>
+            </linearGradient>
+            <circle cx="44.9" cy="40.8" r="2.2" class="InfluxDB-16"/>
+            <path d="M1.4 46.2h64.8v1.6H1.4z" class="InfluxDB-2"/>
+            <linearGradient id="SVGID_6_" x1="1.434" x2="66.234" y1="742.091" y2="742.091" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 -698)">
+              <stop offset="0" stop-color="#FFF"/>
+              <stop offset="1" stop-color="#EFF5FB"/>
+            </linearGradient>
+            <path d="M59.1 42H8.6l-7.2 4.2h64.8z" class="InfluxDB-17"/>
+            <g class="influx-computer coding-svg" id="influx-computer">
+              <ellipse cx="17.7" cy="44.4" class="InfluxDB-18" rx="5.1" ry="1.1"/>
+              <path d="M34.6 38.4c0 .7-.6 1.3-1.3 1.3L4.7 37.9c-.5 0-.9-.6-.9-1.2V18.8c0-.6.4-1.1.9-1.2l28.6-1.8c.7-.1 1.3.5 1.3 1.3v21.3z" class="InfluxDB-4"/>
+              <path d="M20.2 43.6c0 .6-.6 1.2-1.2 1.2h-4c-.6 0-1.2-.6-1.2-1.2V31.3c0-.6.6-1.2 1.2-1.2h4c.6 0 1.2.6 1.2 1.2v12.3z" class="InfluxDB-18"/>
+              <ellipse cx="17" cy="30.6" class="InfluxDB-3" rx="4.6" ry="6.9"/>
+            </g>
+            <path id="XMLID_182_" d="M98.5 6.4c-2.5 0-3.5-.8-4.4-1.5-.8-.6-1.6-1.2-3.4-1.2-1.7 0-2.4 1-3.2 2.1-.8 1.2-1.8 2.6-4.3 2.6-2.4 0-3.2.6-4 1.2-.8.5-1.5 1-3.4 1s-2.5-1-3.2-2.1C71.8 7.3 71 6 68.2 6c-2.9 0-3.5-.5-4.2-1-.6-.5-1.2-1-3.3-1.2" class="InfluxDB-19"/>
+            <g id="XMLID_149_" class="lg-logo-2">
+              <g id="XMLID_155_">
+                <circle id="XMLID_164_" cx="69.3" cy="6" r=".2" class="InfluxDB-20"/>
+                <circle id="XMLID_163_" cx="69.3" cy="6" r=".2" class="InfluxDB-21"/>
+              </g>
+            </g>
+            <g id="XMLID_136_" class="lg-logo-4">
+              <g id="XMLID_141_">
+                <circle id="XMLID_148_" cx="76.9" cy="10.4" r=".2" class="InfluxDB-20"/>
+                <circle id="XMLID_142_" cx="76.9" cy="10.4" r=".2" class="InfluxDB-21"/>
+              </g>
+            </g>
+            <g id="XMLID_123_" class="lg-logo-7">
+              <g id="XMLID_129_">
+                <circle id="XMLID_135_" cx="84.5" cy="8.2" r=".2" class="InfluxDB-20"/>
+                <circle id="XMLID_130_" cx="84.5" cy="8.2" r=".2" class="InfluxDB-21"/>
+              </g>
+            </g>
+            <g id="XMLID_61_" class="lg-logo-3">
+              <g id="XMLID_62_">
+                <circle id="XMLID_122_" cx="92" cy="3.7" r=".2" class="InfluxDB-20"/>
+                <circle id="XMLID_96_" cx="92" cy="3.7" r=".2" class="InfluxDB-21"/>
+              </g>
+            </g>
+            <path d="M60.8 17.3v21m4.2-21v21m4.2-21v21m4.2-21v21m4.2-21v21m4.2-21v21m4.2-21v21m4.2-21v21m4.2-21v21m4.2-21v21m-37.8-21h37.8m-37.8 4.2h37.8m-37.8 4.2h37.8m-37.8 4.2h37.8m-37.8 4.2h37.8m-37.8 4.2h37.8" class="InfluxDB-19"/>
+          </svg>

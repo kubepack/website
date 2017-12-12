@@ -1,0 +1,139 @@
+{{ partial "header.html" .}}
+
+<section id="inner-header">
+    {{ partial "menu.html" . }}
+    <div class="header text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ title (default .Title (index .Params "header")) }}</h1>
+                    <p>{{ $.Param "description" }}</p>
+                </div>
+            </div>
+            <!-- <div class="row justify-content-center"> 
+                <div class="col-md-6 offset-md-3 col-12">
+                    <gcse:search></gcse:search>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+
+<div class="gsc-search">
+    <div class="row justify-content-center"> 
+        <div class="col-md-5 col-12">
+            <gcse:search></gcse:search>
+        </div>
+    </div>            
+</div>
+
+
+
+<!-- 
+<section class="faq-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>FAQ</h1>
+                <p>For any pricing questions, contact us at any time at <a href="mailto:sales@appscode.com" target="_top">sales@appscode.com</a>.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div id="accordion" class="faq-questions">
+                        <ul>
+
+                            <li>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#activeUser">
+                                    <i class="fa fa-plus pull-right"></i>What is an active user?
+                                </a>
+                                <div id="activeUser" class=" collapse qu-resources">
+                                    <p>
+                                        Someone who can log into AppsCode or access their git repositories.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#paymentMethod">
+                                    <i class="fa fa-plus pull-right"></i>What types of payment do you accept?
+                                </a>
+                                <div id="paymentMethod" class=" collapse qu-resources">
+                                    <p>
+                                        Any international credit card (Visa, MasterCard, American Express) and PayPal.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#usermetrics">
+                                    <i class="fa fa-plus pull-right"></i> Can I check my quota stats?
+                                </a>
+                                <div id="usermetrics" class=" collapse qu-resources">
+                                    <p>
+                                        Find your quota and usage stats here: <a class="link" href="https://team-id.appscode.io/billing/quota/">billing/quota/</a>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#charge">
+                                    <i class="fa fa-plus pull-right"></i>Will I be charged when I sign up?
+                                </a>
+                                <div id="charge" class=" collapse qu-resources">
+                                    <p>
+                                        No. You do not need a credit card during trial period.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#changePlan">
+                                    <i class="fa fa-plus pull-right"></i>Can I change my plan at a later time?
+                                </a>
+                                <div id="changePlan" class=" collapse qu-resources">
+                                    <p>
+                                        Yes! You can upgrade or reduce your plan at any time from your AppsCode billing dashboard.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#learning">
+                                    <i class="fa fa-plus pull-right"></i> Where can I get help learn about AppsCode?
+                                </a>
+                                <div id="learning" class=" collapse qu-resources">
+                                    <p>
+                                        You can get help from <a href="/learn">Learn</a> and <a href="/community">Community</a> section of the AppsCode website. We also provider paid online <a href="/services/training/">training courses</a>.
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+ -->
+
+
+<script>
+    (function() {
+        var cx = '015199383701854252104:8mvwy0fek2e';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+
+
+
+{{ partial "subscribers.html" . }}
+
+
+{{ partial "footer.html" . }}

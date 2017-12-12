@@ -1,0 +1,35 @@
+
+.ft-signin {
+  background: url(https://cdn.appscode.com/images/10.svg) no-repeat scroll center center/cover border-box, -webkit-linear-gradient(45deg, $gradient-a 0, $gradient-b 100%) no-repeat scroll center center/cover;
+  padding: 100px 0;
+  margin: 100px 0;
+
+  h2{
+    font-size: 30px;
+    color: $ft-sigin-in-color;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: $ft-sigin-in-color;
+    margin-bottom: 30px;
+  }
+  a {
+    &.signin-btn {
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      color: $ft-sigin-in-color;
+      letter-spacing: 1px;
+      font-weight: 600;
+      border-radius: 3px;
+      padding: 15px 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.1);
+      background-image: linear-gradient(330deg,rgba(244, 235, 196, 0.61) 0,#95c9e6 100%);
+      &:hover {
+        background: $ft-sigin-in-color;
+        color: $ft-sigin-in-btn-hover;
+      }
+    }
+  }
+}

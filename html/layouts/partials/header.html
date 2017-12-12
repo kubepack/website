@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content={{ if .IsHome }}"#0E0F24"{{ else }}"#3691AE"{{ end }}>
+    <meta name="description" content="{{ $.Param "description" }}">
+    <meta name="author" content="{{ $.Param "author" }}">
+    <meta name="keywords" content="application monitoring, attic, build docker image, cloud app, cloud deployment, cloud hosting, container applications, continuous deployment, deployment automation, git hosting, kubernetes autoscaling, nagios, network monitor, repository hosting, source code repository">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@AppsCodeHQ">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:creator" content="@AppsCodeHQ">
+    <meta name="twitter:description" content="{{ $.Param "description" }}">
+    <meta name="twitter:image:src" content="{{ default "https://kubepack.com/images/Atwitter.jpg" ($.Param "image") }}">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ $.Param "description" }}">
+    <meta property="og:site_name" content="AppsCode">
+    <meta property="og:image" content="{{ default "https://kubepack.com/images/OpenGraph.png" ($.Param "image") }}">
+    <meta property="og:type" content="article">
+
+    {{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"/>
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
+    {{ end }}
+    <!-- Favicon/Shortcut Icon -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
+
+    <link rel="shortcut icon" sizes="16X16" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+
+    <link rel="manifest" href="/images/manifest.json">
+    <meta content='/images/browserconfig.xml' name=msapplication-config>
+
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#193d4b">
+    <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link type="text/plain" rel="author" href="/humans.txt" />
+
+    <title>{{.Title}}</title>
+
+    <!-- build:css -->
+    <!-- endbuild -->
+
+    {{ `<!--[if lt IE 9]>
+    <!-- build:js_ie -->
+    <!-- endbuild -->
+    <![endif]-->` | safeHTML }}
+
+    <!-- googleFonts Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <!-- font mfizz cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.3.0/font-mfizz.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+    <!-- build:js_global -->
+    <!-- endbuild -->
+
+    {{ `<!--[if lt IE 8]>
+    <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a modern browser
+        to experience this site.</p>
+    <![endif]-->` | safeHTML }}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    {{ `<!-- Homepage orchestra graphics is adapted from <a title="charles bowling conducts westland orchestra" href="https://flickr.com/photos/wwworks/14237987317">flickr photo</a> shared by <a href="https://flickr.com/people/wwworks">woodleywonderworks</a> under a <a href="https://creativecommons.org/licenses/by/2.0/">Creative Commons ( BY ) license</a> -->` | safeHTML }}
+
+</head>
+
+<body>
+
+<div class="page-wrapper full-width">

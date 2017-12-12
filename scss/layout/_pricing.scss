@@ -1,0 +1,209 @@
+
+.pricing-page {
+  height: 450px;
+}
+
+#pricing-area {
+  position: relative;
+  top: -80px;
+  .pricing-plane {
+    margin: 0 auto;
+    display: table;
+    .basic-plane {
+      background: $basic-plane-bg;
+      border-radius: 4px;
+      width: 415px;
+      display: inline-block;
+      z-index: 2;
+      vertical-align: top;
+      position: relative;
+      box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+
+      .plan-card-header {
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px 30px 0 30px;
+        text-align: center;
+      }
+      .plan-card-body {
+        padding: 0 30px ;
+        text-align: center;
+        h1 {
+          display: inline-block;
+          font-size: 100px;
+          font-weight: 300;
+          line-height: 80px;
+          &span {
+            display: inline-block;
+            font-size: 30px;
+          }
+        }
+      }
+      .plan-card-footer {
+        text-align: left;
+        padding: 20px 30px 50px 30px;
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            list-style: none;
+            font-size: 16px;
+            line-height: 35px;
+            color: $basic-plane-text;
+            img {
+              padding-right: 10px;
+              width: 30px;
+            }
+          }
+        }
+      }
+      .plan-button {
+        background: $basic-plane-btn;
+        display: block;
+        color: $basic-plane-color;
+        text-align: center;
+        text-decoration: none;
+        padding: 25px;
+        transition: background .15s ease;
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+        &:hover {
+          background: $basic-plane-bg-hover;
+        }
+      }
+    }
+    .enrichment-plane {
+      background: $enrichment-plane-bg;
+      border-radius: 0 4px 4px 0;
+      z-index: 1;
+      vertical-align: bottom;
+      width: 415px;
+      display: inline-block;
+      left: -10px;
+      bottom: 25px;
+      box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+      position: relative;
+      .plan-card-header {
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px 30px 0 30px;
+        text-align: center;
+        h2 {
+          color: $enrichment-plane-h2;
+        }
+        p {
+          color: #5a5baf;
+        }
+      }
+      .plan-card-body {
+        padding: 0 30px ;
+        text-align: center;
+        h1 {
+          display: inline-block;
+          font-size: 100px;
+          color: $enrichment-plane-body-h1;
+          font-weight: 300;
+          line-height: 80px;
+          span {
+            display: inline-block;
+            font-size: 30px;
+            color: $enrichment-plane-month;
+          }
+        }
+      }
+      .plan-card-footer {
+        text-align: left;
+        padding: 20px 30px 50px 30px;
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            list-style: none;
+            font-size: 16px;
+            line-height: 35px;
+            color:$enrichment-plane-text;
+            img {
+              padding-right: 10px;
+              width: 30px;
+            }
+          }
+        }
+      }
+      .plan-button {
+        display: block;
+        background: $enrichment-plane-btn;
+        color: $enrichment-plane-btn-color;
+        text-align: center;
+        text-decoration: none;
+        padding: 25px;
+        transition: background .15s ease;
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+        &:hover {
+          background: $enrichment-plane-btn-hover;
+        }
+      }
+    }
+  }
+}
+
+
+#plane-includes {
+  .includes {
+    margin: 0 auto;
+    display: table;
+    .plane-includes-basic {
+      width: 415px;
+      display: inline-block;
+      vertical-align: top;
+      .plane-includes-title {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .features-list {
+        margin-left: 100px;
+        &.basic {
+          ul {
+            >li {
+              i {
+                color:  $features-includes-basic;
+              }
+            }
+          }
+        }
+
+        &.enrichment {
+          ul {
+            >li {
+              i {
+                color: $features-includes-enrichment;
+              }
+            }
+          }
+        }
+        ul {
+          padding: 0;
+          margin: 0;
+          >li {
+            list-style: none;
+            padding: 10px 0;
+            font-size: 16px;
+            display: block;
+            color: $features-includes;
+            font-weight: 500;
+            i {
+              font-size: 16px;
+              padding-right: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

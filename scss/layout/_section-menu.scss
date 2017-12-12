@@ -1,0 +1,102 @@
+
+#product-section-menu {
+    .product-docs-navbar {
+        background: #ffffff;
+        border: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: 0px 10px 20px 0px #f7faff;
+        .ac-product-docs {
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    &.product-name {
+                        >a {
+                            text-decoration: none;
+                            background: #8e8ff3;
+                            color: #fff;
+                            &:hover {
+                                text-decoration: none;
+                                background: #8e8ff3;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    a {
+                        color: #60609a;
+                        font-weight: 600;
+                        font-size: 16px;
+                        padding: 10px 20px;
+                        display: block;
+                        @media only screen and (max-width: 767px) {
+                            text-align: center;                            
+                        }
+                        &:hover {
+                            text-decoration: none;
+                            background: #8e8ff3;
+                            color: #fff;
+                        }
+                        &:focus {
+                            text-decoration: none;
+                            background: #8e8ff3;
+                            color: #fff;
+                        }
+                        &:active {
+                            text-decoration: none;
+                            background: #8e8ff3;
+                            color: #fff;
+                        }
+                    }
+                    &.active {
+                        >a {
+                            text-decoration: none;
+                            background: #8e8ff3;
+                            color: #fff;
+                        }
+                    }
+                    .dropdown-menu {
+                        // left: 0 !important;
+                        box-shadow: 0px 12px 20px 0px rgb(236, 236, 236);
+                        @media only screen and (max-width: 767px) {
+                            position: initial;
+                        }
+                        li {
+                           >a {
+                                padding: 5px 20px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.sectopn-toggler-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.edit-thisPage {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    @media only screen and (max-width: 767px) {
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+        border-top: 1px solid #eee;
+        background: #fefeff;                         
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}

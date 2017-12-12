@@ -1,0 +1,49 @@
+{{ partial "header.html" .}}
+
+
+<section id="inner-header">
+    {{ partial "menu.html" . }}
+    <div class="header text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ title (default .Title (index .Params "header")) }}</h1>
+                    <p>{{ $.Param "description" }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /End of Home Section -->
+<section id="inner-body-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <article class="article">
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ./ default-content -->
+
+<section id="share">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-12">
+                {{ partial "share.html" . }}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{{ partial "subscribers.html" . }}
+
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,58 @@
+title: Secure Lightweight Kubernetes Package Manager
+baseurl: https://kubepack.com
+languageCode: en-us
+pluralizeListTitles: false
+pygmentsStyle: "monokai"
+pygmentsUseClasses: false
+disqusShortname: appscode
+staticdir: "build"
+taxonomies:
+  tag: "tags"
+  category: "categories"
+  author: "authors"
+params:
+  author: KubePack Authors
+  date_format: Mon, Jan 2, 2006
+  description: Secure Lightweight Kubernetes Package Manager
+  email: kubepack@appscode.com
+  logo: /images/logo.svg
+  twitter_url: https://twitter.com/KubePack
+  slack_url: https://slack.appscode.com/
+  issues_url: https://github.com/kubepack/pack/issues/new
+  youtube_url: https://www.youtube.com/c/appscode
+  docker_url: https://hub.docker.com/u/kubedb
+  contact_email: kubepack@appscode.com
+  sales_email: sales@appscode.com
+  contact_phone: +1 (650) 241-8486
+menu:
+  main:
+    - Name: "Database"
+      identifier: database
+      Weight: 1
+      URL: https://github.com/kubepack/pack/blob/master/docs/install.md
+    - Name: "Documentation"
+      Weight: 2
+    - Name:
+      Pre: "<i class='fa fa-github'></i>"
+      Weight: 3
+      Identifier: "GitHub"
+      URL: "https://github.com/kubepack"
+    - Name:
+      Pre: "<i class='fa fa-twitter'></i>"
+      Weight: 4
+      Identifier: "twitter"
+      URL: "https://twitter.com/KubePack"
+    - Name:
+      Pre: "<i class='fa fa-slack'></i>"
+      Weight: 5
+      Identifier: "slack"
+      URL: "http://slack.kubernetes.io/"
+    - Name: Elasticsearch
+      identifier: elasticsearch
+      parent: database
+      weight: 10
+    - Name: Postgres
+      identifier: postgres
+      parent: database
+      weight: 20
+

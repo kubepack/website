@@ -1,0 +1,43 @@
+{{ $latestVersion:= (index $.Site.Data.products.products.cli "latestVersion") }}
+<nav class="navbar navbar-expand-lg navbar-dark  top-menu" data-toggle="affix">
+    <div class="container">
+
+        <a class="navbar-brand navbar-brand-logo" href="/">
+            <img class="main-logo " src="/images/logo.svg" alt="AppsCode. {{ .Site.Params.description }}">
+            <img class="affix-logo" src="/images/logo-color.svg" alt="AppsCode. {{ .Site.Params.description }}">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                {{ $currentNode := . }}
+                {{ range .Site.Menus.main }}
+        
+                    {{ if .HasChildren }}
+                    <li class="dropdown {{ if $currentNode.IsMenuCurrent "main" . }} active {{end}}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }}<span class="caret"></span></a>
+                        <ul class="dropdown-menu {{ if $currentNode.IsMenuCurrent "main" . }} open {{ end }}">
+                            {{ range .Children }}
+                            <li {{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} class="active" {{ end }}>
+                                <a href="/docs/{{ $latestVersion }}/tutorials/{{ .Identifier }}/ ">{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                    {{else}}
+                    <li>
+                      {{ if eq .Name "Documentation" }}
+                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="/docs/{{ $latestVersion }}/getting-started/">{{ .Name }}</a>
+                      {{ else }}
+                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" target="_blank" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+                      {{ end }}
+                    </li>
+                    {{ end }}
+                {{end}}  
+            </ul>            
+        </div>
+    </div>
+</nav>
+

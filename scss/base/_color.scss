@@ -1,0 +1,147 @@
+
+//base color
+$white:#fff;
+$black:#000;
+$title:#484f64;
+$paragraph:#32325d;
+$ac-base-green:#3bb878;
+$ac-base-blue:#03A9F4;
+$primary-color:#3bb878;
+$border:#dddddd;
+$ac-cookies-ok:#2a283a;
+
+// header gradient
+$gradient-a :#1d72da;
+$gradient-b :#0066b7;
+
+// top menu
+$top-menu:$white;
+$top-menu-affix-bg:$white;
+$top-menu-affix:#727d98;
+
+// home page video
+$video-bg:rgba(76, 175, 80, 0.6);
+$video-shadow:rgba(0, 0, 0, 0.1) 0 5px 10px, rgba(0, 0, 0, 0.2) 0 10px 30px;
+$configuration-shadow:0px 0px 20px 0px rgba(20, 52, 92, 0.06);
+$configuration-bg:$white;
+
+// CodeMirror
+$CodeMirror-color:#3F51B5;
+$CodeMirror-comment:#91a2b0;
+
+//article page
+$article-strong:#727d98;
+$article-content:#4d4d4d;
+$article-link:$article-strong;
+$article-link-hover:$primary-color;
+$article-btn:#eaeaea;
+$article-border:$border;
+$article-code:#fdedf3;
+$article-pre-text:$white;
+$article-pre-bg:#282e3e;
+$article-blockquote:#fcfcfc;
+$article-blockquote-border:#C8E6C9;
+$article-table-th-bg:$article-btn;
+$article-table-th-color:#5b6171;
+$article-table-th-border:$article-table-th-bg;
+$article-table-tr-bg:$white;
+$article-table-tr-color:$article-table-th-color;
+$article-table-tr-border:$article-table-th-border;
+$article-span-color:#999da7;
+$article-hr:$article-btn;
+$article-ol-color:$article-strong;
+$article-ol-link:$primary-color;
+
+// pricing page
+  //basic
+  $basic-plane-bg:$white;
+  $basic-plane-text:$paragraph;
+  $basic-plane-btn:#f6f9fc;
+  $basic-plane-color:#32325d;
+  $basic-plane-bg-hover:#e6ebf1;
+
+  //enrichment-plane
+  $enrichment-plane-bg:#f5faff;
+  $enrichment-plane-h2:#5a5a96;
+  $enrichment-plane-paragraph:#5a5baf;
+  $enrichment-plane-body-h1:#5a5a96;
+  $enrichment-plane-text:#5d5e9c;
+  $enrichment-plane-month:#5a5a96;
+  $enrichment-plane-btn:rgba(85,90,191,.2);
+  $enrichment-plane-btn-color:#5a5baf;
+  $enrichment-plane-btn-hover:rgba(85,90,191,.35);
+
+  //features-list
+  $features-includes:#32325d;
+  $features-includes-basic:#93d686;
+  $features-includes-enrichment:#aaaae5;
+
+// footer sign in
+$ft-sigin-in-color:$white;
+$ft-sigin-in-btn-hover:#32325d;
+
+// faq
+$faq-heading-bg:$white;
+$faq-heading-color:#32325d;
+$faq-body-bg:#f8fafd;
+$faq-body-color:#727d96;
+
+//subscribers
+$subscribers-bg:#f5f7fc;
+$subscribers-body-color:#32325d;
+$subscribe-email-bg:$white;
+$subscribe-email-color:#32325d;
+$subscribe-email-label:#ea5e32;
+$mail-subscribe-bg:$primary-color;
+$mail-subscribe-color:$white;
+
+// social
+$social-bg:$primary-color;
+$social-list-color:$white;
+$social-list-social-name:$white;
+$social-list-social-color:rgba(255, 255, 255, 0.7);
+
+// product
+$product-title-1:#727d98;
+$product-title-2:$product-title-1;
+$product-title-3:$product-title-2;
+
+// sign in page
+$signup-area-bg:$white;
+$signup-area-span:$paragraph;
+$signup-area-link:$primary-color;
+$signup-invitation:$primary-color;
+$signup-remove-email:#9E9E9E;
+$signup-skip:#607d8b;
+$signup-skip-border:#4A839E;
+$signup-button-bg:$primary-color;
+$signup-button-border:$signup-button-bg;
+$signup-button-color:$white;
+$signup-button-hover:#47CB87;
+$signup-checkbox-newsletter:#666;
+$signup-edit-bg:$white;
+$signup-edit:$primary-color;
+$signup-form-control:$primary-color;
+$signup-domin:$white;
+$signup-domin-error:#e91e63;
+$signup-signin-legal-color:#32325d;
+
+// password
+$pw-button_strength:#9E9E9E;
+$pw-button_strength-hover:#9E9E9E;
+$pw-medium:#FFEC8B;
+$pw-weak:#FFA0A0;
+$error-danger: #f00;
+$error-warning: #ff5722;
+$placeholder-color:$paragraph;
+
+// footer color
+$footer:#2a283a;
+$footer-logo:#d3d1dd;
+$footer-logo-year:#7a778c;
+$footer-text:$footer-logo-year;
+
+// cookies
+$cookies-bg:#6161d9;
+
+

@@ -1,15 +1,5 @@
 {
   "hosting": {
-    "public": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "redirects": [ {
-      "source" : "**/.*",
-      "destination" : "https://github.com/kubepack",
-      "type" : 302
-    } ]
+    "public": "public"
   }
 }
