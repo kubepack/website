@@ -1,6 +1,6 @@
 {
   "name": "kubedb-web",
-  "description": "KubePack Website",
+  "description": "Kubepack Website",
   "version": "0.1.0",
   "authors": [
     "AppsCode Eng <eng@appscode.com>"

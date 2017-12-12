@@ -11,12 +11,12 @@ taxonomies:
   category: "categories"
   author: "authors"
 params:
-  author: KubePack Authors
+  author: Kubepack Authors
   date_format: Mon, Jan 2, 2006
   description: Secure Lightweight Kubernetes Package Manager
   email: kubepack@appscode.com
   logo: /images/logo.svg
-  twitter_url: https://twitter.com/KubePack
+  twitter_url: https://twitter.com/Kubepack
   slack_url: https://slack.appscode.com/
   issues_url: https://github.com/kubepack/pack/issues/new
   youtube_url: https://www.youtube.com/c/appscode
@@ -41,7 +41,7 @@ menu:
       Pre: "<i class='fa fa-twitter'></i>"
       Weight: 4
       Identifier: "twitter"
-      URL: "https://twitter.com/KubePack"
+      URL: "https://twitter.com/Kubepack"
     - Name:
       Pre: "<i class='fa fa-slack'></i>"
       Weight: 5

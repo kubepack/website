@@ -1,4 +1,4 @@
 ---
-title: Search Results | KubePack
+title: Search Results | Kubepack
 header: Secure Lightweight Kubernetes Package Manager
 ---
