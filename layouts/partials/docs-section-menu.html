@@ -1,0 +1,66 @@
+<sections id="product-section-menu">
+  <nav class="navbar navbar-expand-lg navbar-light product-docs-navbar">
+      <div class="container">
+      <span class="navbar-toggler sectopn-toggler-nav" type="button" data-toggle="collapse" data-target="#section-menu-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <!-- <span><i class="fa fa-arrow-down"></i></span> -->
+      </span>
+      <div class="collapse navbar-collapse ac-product-docs" id="section-menu-nav">
+        {{ $currentNode := . }}
+        {{ $menu := .Params.menu_name }}
+        {{ $productName := "cli" }}
+        {{ if $productName }}
+          {{ $productJson := (index $.Site.Data.products.products $productName ) }}
+
+            <ul class="navbar-nav mr-auto">
+            {{ $sectionMenuId := .Params.section_menu_id }}
+            {{ if isset .Params "menu_name" }}
+
+              {{ range (index .Site.Menus .Params.menu_name) }} 
+                {{ if eq (string .Pre) "dropdown" }}
+                  <li class="dropdown {{ if eq $sectionMenuId .Identifier }} active {{ end }}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                      {{ range .Children }}
+
+                        <li {{ if $currentNode.HasMenuCurrent $menu .}} class="active" {{ end }} ><a href="{{ .URL }}">{{ .Name }}</a></li>
+
+                      {{ end }}
+                    </ul>
+                  </li>
+
+                {{ else }}
+                  <li class="nav-item {{ if eq $sectionMenuId .Identifier }} active {{ end }}"><a href="{{ .URL }} ">{{ .Name }}</a></li>                  
+                {{ end }}
+              {{ end }}
+
+            {{ end }}
+              
+              {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
+              {{  $versions := (index $productJson "versions" ) }}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Versions <span class="caret"></span></a>
+                <ul id="versions" class="dropdown-menu" data-product-name={{.Params.product_name}}>
+                  {{ range $version := $versions }}
+                    {{ $branch := (index $version "branch") }}
+                    {{ if (index $version "isDocsAvailable") }}
+                      <li {{ if eq $branch $currentBranch }} class="active" {{ end }} ><a href="/docs/{{ $branch }}/">{{ $branch }}</a></li>
+                    {{ else }}
+                      <li><a href="{{ index $productJson "githubUrl" }}/tree/{{ $branch }}/docs" target="_blank">{{ $branch }}</a></li>
+                    {{ end }}
+                  {{ end }}
+                </ul>
+              </li>
+        </ul>
+
+        {{ $urlToken := (split .File.Path "/") }}
+        <a class="edit-thisPage" href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 3) }} {{- range after 3 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank">
+          <i class="fa fa-github"></i> Edit this page
+        </a>
+      {{ end }}
+
+      </div>
+    </div>
+    </nav>
+</sections>

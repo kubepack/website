@@ -1,0 +1,19 @@
+{
+  "products": {
+    "cli": {
+      "url": "git@github.com:sajibcse68/cli.git",
+      "versions": [
+          {
+              "branch": "master",
+              "isDocsAvailable": false
+          },
+          {
+              "branch": "0.7.2",
+              "isDocsAvailable": true
+          }
+      ],
+      "latestVersion": "0.7.2",
+      "githubUrl": "https://github.com/sajibcse68/cli"
+    }
+  }
+}

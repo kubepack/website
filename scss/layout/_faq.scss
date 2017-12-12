@@ -1,0 +1,36 @@
+#faq {
+  margin: 100px 0;
+  .faq-title{
+    margin-bottom: 20px;
+  }
+  .faq-area {
+    width: 60%;
+    margin: 0 auto;
+    ul {
+      padding: 0;
+      margin: 0;
+      > li {
+        list-style: none;
+        border-radius: 6px;
+        box-shadow: 0.5625rem 0.6875rem 3.0625rem 0 rgba(78, 98, 117, .2);
+        margin-bottom: 20px;
+        .faq-heading {
+          font-size: 20px;
+          background:$faq-heading-bg;
+          color: $faq-heading-color;
+          padding: 20px;
+          cursor: pointer;
+          border-radius: 6px;
+        }
+        .faq-body {
+          font-size: 16px;
+          background: $faq-body-bg;
+          color: $faq-body-color;
+          padding: 20px;
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+        }
+      }
+    }
+  }
+}

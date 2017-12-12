@@ -1,0 +1,109 @@
+
+//dropdown css
+
+.nav .open>a{
+    // background: rgba(0,0,0,.1);
+    // box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    background: transparent;
+}
+
+.navbar-nav {
+    color: #000000;
+    li.dropdown {
+        color: #000000;
+        a {
+            &:hover{
+                background: rgba(0,0,0,.1);
+                box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+            }
+            &:focus {
+                background: rgba(0,0,0,.1);
+                box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+            }
+            &:active {
+                background: rgba(0,0,0,.1);
+                box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+            }
+            .active {
+                background: rgba(0,0,0,.1);
+                box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+            }
+        }
+
+        ul.dropdown-menu {
+            transition: all .25s ease-out;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px 0 rgba(51,51,79,.1), 0 0 10px 0 rgba(51,51,79,.06);
+            position: absolute;
+            box-sizing: border-box;
+            text-align: left;
+            z-index: 100;
+            transition-delay: .1s;
+            border: 0;
+            left: 5px;
+            top: 50px;
+            &::before{
+                position: absolute;
+                top: -10px;
+                left: 32px;
+                display: inline-block;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 10px solid transparent;
+                border-bottom-color: #fff;
+                content: '';
+            }
+            >li {
+                display: block;
+                margin: 6px 0;
+                padding: 0;
+                &.active {
+                    >a {
+                        color: #ffffff;
+                        text-decoration: none;
+                        background-color:#8585ea;
+                        outline: none;
+                        border-radius: 0;
+                        text-transform: none;
+                        font-size: 16px;
+                    }
+                }
+                >a {
+                    transition: all .25s ease-out;
+                    display: block;
+                    color: #33325e;
+                    padding: 6px 20px;
+                    letter-spacing: 0;
+                    margin: 0;
+                    font-weight: 600;
+                    border-radius: 0;
+                    text-transform: none;
+                    font-size: 16px;
+                    &:hover {
+                        color: #ffffff ;
+                        text-decoration: none;
+                        background: #8585ea;
+                        outline: none;
+                        border-radius: 0;
+                    }
+                    &:focus {
+                        color: #ffffff;
+                        text-decoration: none;
+                        background:#8585ea;
+                        outline: none;
+                        border-radius: 0;
+                    }
+                   &:active {
+                        color: #ffffff;
+                        text-decoration: none;
+                        border-radius: 0;
+                        background:#8585ea;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

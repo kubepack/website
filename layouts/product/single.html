@@ -1,0 +1,195 @@
+{{ partial "header.html" . }}
+
+
+<section id="inner-header" class="pricing-page">
+    {{ partial "menu.html" . }}
+    <div class="header text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ title (default .Title (index .Params "header")) }}</h1>
+                    <p>{{ $.Param "description" }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="cc-product">
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="product-them">
+                        <object id="docker" type="image/svg+xml" data="/images/products/docker_kubernetes.svg"> </object>
+                    </div>
+                </div>
+                <div class="col-md-offset-1 col-sm-5">
+                    <h2>Docker & Kubernetes</h2>
+                    <p>Build self-managed multi-host cloud contianer in minutes just with a single click.
+                        Using Google's Kubernetes cotainer orchestration platform you can easily build container.Then, deploy your dockerized replicated, fault- application into a Kubernetes cluster in seconds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2>Multi-Cloud MicroServices Platform</h2>
+                    <p>AppsCode comes with support for Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+                        You are free to run your containerized applications on any supported cloud or on-premises platform, supported by Kubernetes.</p>
+                </div>
+                <div class="col-md-offset-1 col-sm-6">
+                    <div class="product-them">
+                        <object id="multi-cloud" type="image/svg+xml" data="/images/products/multi-cloud.svg"> </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-offset-1">
+                    <div class="visual-predict">
+                       <div class="product-them">
+                           <object id="Pharm_kub" type="image/svg+xml" data="/images/products/kubectl.svg" alt="Pharm and Kubectl. Manage your Kubernetes application life-cycle using Pharm and Kubectl from AppsCode."> </object>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <h2>Pharm & Kubectl</h2>
+                    <p>Manage your Kubernetes application life-cycle from AppsCode web interface called Pharm, or using Kubectl, a Kubernetes command-line tool. Use Pharm to manage your cluster secrets, configurations, SSL certificates, ingress rules, databases and much more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2>L4 & L7 Loadbalancing</h2>
+                    <p>Expose your containarized applications to the internet via TCP or HTTP(S) protocols using built-in HA Proxy based ingress controller.
+                        Import your custom SSL certificates to secure endpoints at no additional cost.</p>
+                </div>
+                <div class="col-md-offset-1 col-sm-6">
+                    <div class="product-them">
+                        <object id="loadbalancing" type="image/svg+xml" data="/images/products/loadbalancing.svg"> </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="product-them">
+                        <img src="/images/products/database.svg" alt="Database Support. Use managed and production-ready database instances from AppsCode.">
+                    </div>
+                </div>
+                <div class="col-md-offset-1 col-sm-5">
+                    <h2>Database Support</h2>
+                    <p>Use managed and production-ready database instances from AppsCode, inside your  Kubernetes cluster.
+                        AppsCode currently supports database systems like PostgreSQL, InfluxDB & ElasticSearch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2>Freedom of Choice</h2>
+                    <p>AppsCode allows you to use any services provided by underlying cloud providers and external third party service providers.</p>
+                </div>
+                <div class="col-md-offset-1 col-sm-6">
+                    <div class="product-them">
+                        <object id="freedom-choice" type="image/svg+xml" data="/images/products/choice.svg"> </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="product-them">
+                        <object id="elastic" type="image/svg+xml" data="/images/products/elasticSearch.svg"></object>
+                    </div>
+                </div>
+                <div class="col-md-offset-1 col-sm-5">
+                    <h2>Logging with ElasticSearch & Kibana</h2>
+                    <p>Use Fluentd data collector to collect logs from your containarized and traditional workloads into ElasticSearch.
+                        Use Kibana to visualize and explore your logs stored inside ElasticSearch. Kibana integrates seamlessly with ElasticSearch, shapes up your data and provides sophisticated anaytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2>Monitoring with InfluxDB</h2>
+                    <p>Use Heapster to collect monitoring data for Kubernetes containers into InfluxDB time-series database.
+                        Use Ganglia and StatsD to collect application monitoring data from InfluxDB. Ganglia can receive multiple metrics from multiple hosts and make them accessible for polling.</p>
+                </div>
+                <div class="col-md-offset-1 col-sm-6">
+                    <div class="product-them">
+                        <object id="Influx" type="image/svg+xml" data="/images/products/monitoring.svg"  alt="InfluxDB. Use InfluxDB from AppsCode to monitor your Kubernetes applications."></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="product-them">
+                        <object id="grafana" type="image/svg+xml" data="/images/products/grafana.svg"></object>
+                    </div>
+                </div>
+                <div class="col-md-offset-1 col-sm-5">
+                    <h2>Grafana</h2>
+                    <p>Use Grafana Dashboards to visualize all your monitoring data.
+                        Write queries against InfluxDB to generate custom graphs for monitoring data and visualize statistics from all cluster under user organization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2>Icinga for Alerts</h2>
+                    <p>Write Icinga rules for monitoring data from InfluxDB to set alerts on your Kubernetes applications.
+                        Get automated email & SMS notifications and ACK to alerts via email.</p>
+                </div>
+                <div class="col-md-offset-1 col-sm-6">
+                    <div class="product-them">
+                        <object id="lcaAle" type="image/svg+xml" data="/images/products/icinga-alerts.svg"></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+{{ partial "subscribers.html" . }}
+
+{{ partial "footer.html" . }}

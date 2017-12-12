@@ -1,0 +1,148 @@
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  background: $white;
+  font-family: Raleway, sans-serif !important;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: $paragraph;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $title;
+  margin-bottom: 10px;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td, button {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, ol, p, pre, ul {
+  margin: 0;
+  padding: 0
+}
+
+li > ol, li > ul {
+  margin-bottom: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+address, blockquote, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, ol, p, pre dl, table, ul {
+  margin-bottom: 1.75rem
+}
+
+dd, ol, ul {
+  margin-left: 1.75rem
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.75;
+  overflow-y: scroll;
+  min-height: 100%
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.55556;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.16667;
+
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.4
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.55556
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.75
+}
+
+img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle
+}
+
+img[height], img[width] {
+  max-width: none
+}
+
+table {
+  width: 100%
+}
+
+.CodeMirror {
+  font-family: monospace;
+  max-height: 247px !important;
+  color: $CodeMirror-color !important;
+  font-size: 16px !important;
+}
+
+.cm-s-default .cm-comment {
+  color:$CodeMirror-comment !important;
+}
+
+.CodeMirror-gutters {
+  background-color: #f2feef !important;
+  border-right: 0px !important;
+}
+
+.CodeMirror-linenumber {
+  color: #5dc79e !important;
+}
+
+.CodeMirror-lines {
+  text-indent: 10px !important;
+}

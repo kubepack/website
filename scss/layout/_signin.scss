@@ -1,0 +1,424 @@
+
+.container-min {
+  max-width: 400px;
+  margin: 0 auto;
+  bottom: 0;
+  .logo-signin {
+    margin: 20% 0 30px 0;
+    a {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+      overflow: hidden;
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .signup-area {
+    padding: 40px;
+    background: $signup-area-bg;
+    border-radius: 6px;
+    @media(max-width: 400px) {
+      margin: 0 15px;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+      line-height: 20px;
+    }
+
+    span {
+      margin: 20px 0;
+      text-align: center;
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: $signup-area-span;
+
+      a {
+        color: $signup-area-link;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+    }
+
+    form.email {
+      margin-top: 30px;
+
+      label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 0;
+        font-weight: normal;
+        font-size: 14px;
+      }
+
+      .titlename {
+        display: block;
+        padding-bottom: 10px;
+
+        .email-invitation {
+          margin: 0;
+          font-weight: 600;
+          display: inline-block;
+          text-align: left;
+        }
+
+        a.invitation {
+          font-size: 12px;
+          float: right;
+          display: inline-block;
+          padding: 0;
+          font-weight: 600;
+          color: $signup-invitation;
+          text-decoration: none;
+        }
+      }
+
+      .invite-emailbox {
+
+        .invite-email-box {
+          width: 93%;
+          display: inline-block;
+        }
+        .remove-email {
+          width: 10%;
+          color: $signup-remove-email;
+          font-size: 12px;
+          padding-left: 6px;
+
+          &:hover {
+            color: $error-danger
+          }
+        }
+      }
+
+      .invitation-btn {
+        display: block;
+
+        .skip {
+          display: inline-block;
+          width: 43%;
+          text-align: center;
+          background: $signup-skip;
+          font-size: 14px;
+          border-color: $signup-skip-border;
+          font-weight: 400;
+          margin: 0;
+        }
+
+        .submit {
+          display: inline-block;
+          width: 55%;
+          margin: 0;
+        }
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 30px 0 20px 0;
+        background: $signup-button-bg;
+        border: 1px solid $signup-button-border;
+        padding: 0 10px;
+        border-radius: 3px;
+        height: 42px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $signup-button-color;
+        outline: 0;
+        &:hover {
+          background:$signup-button-hover;
+        }
+        i {
+          padding-left: 20px;
+        }
+      }
+      .checkbox-newsletter {
+        font-size: 12px;
+        color: $signup-checkbox-newsletter;
+        font-weight: 400;
+
+        input[type=checkbox] {
+          margin: 4px 10px 0 0;
+          font-size: 20px;
+          line-height: normal;
+        }
+      }
+      .form-group {
+        .edit {
+          text-align: right;
+          float: right;
+          font-size: 12px;
+          color: $signup-edit;
+          font-weight: 600;
+          background: $signup-edit-bg;
+          margin-bottom: 5px;
+          padding: 0;
+        }
+
+        .input-group {
+          @media(max-width: 400px) {
+            position: relative;
+            display: block;
+            margin-bottom: 20px;
+            border-collapse: separate;
+            overflow: hidden;
+          }
+        }
+
+        input.form-control {
+          height: 42px;
+          border: 1px solid $signup-form-control;
+        }
+
+        select.form-control {
+          height: 42px;
+          border: 1px solid $signup-form-control;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        input.domain-name {
+          width: auto;
+          height: 42px;
+          border-radius: 3px;
+          display: inline-block;
+
+          @media(max-width: 400px) {
+            width: 100%;
+          }
+        }
+
+        .domin {
+          font-size: 14px;
+          font-weight: 500;
+          width: auto;
+          padding: 0 10px;
+          background: $signup-domin;
+          border: 0;
+          text-align: left;
+
+          @media(max-width: 400px) {
+            display: none;
+          }
+        }
+
+        .error {
+          position: relative;
+          color: $signup-domin-error;
+          left: 0;
+          font-weight: normal;
+          bottom: 0;
+          font-size: 14px;
+        }
+
+        small {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+
+    }
+  }
+
+  .signin-legal {
+    text-align: center;
+    margin: 30px 0 50px;
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        display: inline-block;
+        a {
+          color: $signup-signin-legal-color;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 10px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+//  The ultimate jQuery password input plugin. Featuring secure strength indicator and hide/show password
+//  http://git.aaronlumsden.com/strength.js/
+
+.strength_meter {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 80px;
+  background: #eee;
+  font-weight: 400;
+  transition: all .3s ease-in-out;
+  font-size: 14px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  > div {
+    line-height: 40px;
+    padding: 0 15px;
+    height: 40px;
+    text-align: center;
+  }
+}
+
+a.button_strength {
+  position: absolute;
+  top: 0;
+  color: $pw-button_strength;
+  font-size: 16px;
+  right: 90px;
+  height: 40px;
+  line-height: 40px;
+  &:hover, &:active, &:focus {
+    color: $pw-button_strength-hover;
+  }
+}
+
+.weak {
+  background-color: $pw-weak;
+}
+
+.medium {
+  background-color: $pw-medium;
+}
+
+.strong {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.form-area {
+  width: 302px;
+  margin: 0 auto;
+}
+
+
+
+label#subdomain-signin-error {
+  position: absolute;
+  bottom: 0;
+  color: $error-danger;
+  z-index: 2;
+  display: inline-block;
+  top: 40px;
+}
+
+label#subdomain-error {
+  position: absolute;
+  bottom: 0;
+  color: $error-danger;
+  z-index: 2;
+  display: inline-block;
+  top: 40px;
+}
+
+label#exampleInputEmail3-error {
+  font-weight: 400;
+  font-size: 12px;
+  color: $error-warning;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+label#email-subscribe-error {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  position: absolute;
+  font-size: 14px;
+  color: $error-danger;
+  font-weight: 300;
+  text-indent: 5px;
+}
+
+label#workEmail-error {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: $error-danger;
+  font-weight: 300;
+}
+
+label#InputLastName-error {
+  color: $error-danger;
+}
+
+label#InputFirstName-error {
+  color: $error-danger;
+}
+
+label#InputEmail-error {
+  color: $error-danger
+}
+
+label#companyname-error {
+  color: $error-danger;
+}
+
+label#Inputjob-error {
+  color: $error-danger;
+}
+
+label#body-error {
+  color: $error-danger;
+}
+
+label#phone-error {
+  color: $error-danger;
+}
+
+
+
+.email-box ::-webkit-input-placeholder { /* Chrome */
+  color: $placeholder-color;
+  transition: opacity 250ms ease-in-out;
+}
+.email-box :focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+.email-box :-ms-input-placeholder { /* IE 10+ */
+  color: $placeholder-color;
+  transition: opacity 250ms ease-in-out;
+}
+.email-box :focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.email-box ::-moz-placeholder { /* Firefox 19+ */
+  color: $placeholder-color;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+.email-box :focus::-moz-placeholder {
+  opacity: 0.5;
+}
+.email-box :-moz-placeholder { /* Firefox 4 - 18 */
+  color: $placeholder-color;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+.email-box :focus:-moz-placeholder {
+  opacity: 0.5;
+}

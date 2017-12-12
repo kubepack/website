@@ -1,0 +1,27 @@
+<div class="installation-pre-area">
+  <ul class="nav nav-tabs tab-install" role="tablist">
+    <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
+    <li><a href="#mac" aria-controls="mac" data-toggle="tab">Mac</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content tab-install-data">
+    <div class="tab-pane active" id="linux">
+      <textarea class="installation-pre-code">
+      // Linux amd 64-bit
+      $ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.7.1/kubedb-linux-amd64 \
+      && chmod +x kubedb \c
+      && sudo mv kubedb /usr/local/bin/
+      $ kubedb init
+      </textarea>
+    </div>
+    <div class="tab-pane" id="mac">
+      <textarea class="installation-pre-code">
+      //Mac 64-bit
+      $ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.7.1/kubedb-linux-amd64 \
+      && chmod +x kubedb \
+      && sudo mv kubedb /usr/local/bin/
+      $ kubedb init
+      </textarea>
+    </div>
+  </div>
+</div>

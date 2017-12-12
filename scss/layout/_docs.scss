@@ -1,0 +1,127 @@
+.list-single-content {
+    margin: 50px 0;
+    img.services-banner {
+      width: 500px;
+      height: auto;
+      float: left;
+      padding-right: 50px;
+    }
+  }
+  
+  .default-content {
+    margin: 50px 0 0 0;
+    display: inline-block;
+    @media(max-width: 768px) {
+      margin: 20px 0 0 0;
+    }
+    .select-nav {
+      width: 50%;
+      padding: 10px;
+      height: 35px !important;
+      border: 1px solid #3bb878;
+      box-shadow: none;
+      margin-bottom: 20px;
+    }
+  
+    @media(max-width: 768px) {
+      width: 100%;
+    }
+  
+    @media(min-width: 678px) {
+      width: 80%;
+    }
+  }
+  
+  .short-list {
+    margin: 0 0 20px 0;
+    display: block;
+    overflow: hidden;
+  
+    .doc-help-box {
+      border: 1px solid #E1E1E1;
+      padding: 19px 30px;
+      min-height: 170px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      h3 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 0;
+        font-family: Raleway,sans-serif;
+        line-height: 35px;
+        color: #727d98;
+      }
+      p {
+        font-size: 16px;
+        margin: 0;
+      }
+    }
+  }
+  
+  
+  // Doc list tiem
+  
+  .doc-list-tiem {
+    padding: 0;
+    display: block;
+    overflow: hidden;
+  
+    .doc-list-menu {
+      a {
+        text-decoration: none;
+        display: block;
+        overflow: hidden;
+        padding: 30px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        &:hover {
+          background: #fcfcfc;
+          border: 1px solid #f2f2f2;
+          border-radius: 3px;
+        }
+        img {
+          margin: 0 auto;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 400;
+          margin-bottom: 20px;
+          line-height: 35px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+  
+  
+  // docs home
+  
+  .docs-home {
+  
+    a {
+      color: $white;
+      padding: 6px 10px;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      display: inline-block;
+      border-radius: 3px;
+      background: #33bbbb;
+  
+      &:hover, &:focus {
+        text-decoration: none;
+        color: #ffffff;
+        opacity: 0.8;
+      }
+    }
+  
+    i {
+      padding-right: 10px;
+      font-size: 16px;
+    }
+  }
+
+  
