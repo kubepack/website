@@ -25,8 +25,8 @@
 
    <section class="get-installation">
       <div class="container">
-         <div class="row">
-            <div class="col-md-12">
+         <div class="row justify-content-center">
+            <div class="col-md-8">
                <div class="installation-content text-center">
                   <h2>Quick installation</h2>
                   <P>
@@ -38,7 +38,7 @@
          </div>
         </br>
          <div class="row justify-content-center">
-            <div class="col-md-10">
+            <div class="col-md-9">
                 <div class="installation-pre-area">
                     <ul class="nav nav-tabs tab-install" role="tablist">
                         <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
@@ -47,22 +47,22 @@
                     <!-- Tab panes -->
                     <div class="tab-content tab-install-data">
                         <div class="tab-pane active" id="linux">
-                        <textarea class="installation-pre-code">
-$ wget -O kubedb https://github.com/kubepack/pack/releases/download/0.7.1/kubedb-linux-amd64 \
+                        <pre class="installation-pre-code"><code>$ wget -O kubedb https://github.com/kubepack/pack/releases/download/0.7.1/kubedb-linux-amd64 \
 && chmod +x kubedb \
 && sudo mv kubedb /usr/local/bin/
 
-$ kubedb init</textarea>
+$ kubedb init</code>
+                        </pre>
                         </div>
                         <div class="tab-pane" id="mac">
-                        <textarea class="installation-pre-code">
-$ wget -O kubedb https://github.com/kubepack/pack/releases/download/0.7.1/kubedb-darwin-amd64 \
+                        <pre class="installation-pre-code"><code>$ wget -O kubedb https://github.com/kubepack/pack/releases/download/0.7.1/kubedb-darwin-amd64 \
 && chmod +x kubedb \
 && sudo mv kubedb /usr/local/bin/
 
-$ kubedb init</textarea>
+$ kubedb init</code></pre>
                         </div>
                     </div> <!-- ./Tab panes -->
+                    
                 </div>
             </div>
          </div>
