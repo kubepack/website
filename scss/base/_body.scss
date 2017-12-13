@@ -58,6 +58,7 @@
           border: 0;
           margin-right: 20px;
           padding: 5px 10px;
+          text-decoration: none;
           font-size: 14px;
           font-weight: 600;
           &:hover, &:active, &:focus {
@@ -67,8 +68,9 @@
             font-weight: 600;
             border-radius: 3px;
             color: #fff;
-            background: linear-gradient(45deg, #4949A3, #7272E9, #4d4dcb);
+            background: linear-gradient(45deg, #1557d0,#275fd2,#003aa2);
             will-change: transform;
+            text-decoration: none;
             transform-origin: 50% 0;
             transition: transform .3s cubic-bezier(.165,.84,.44,1);
           }
@@ -82,8 +84,9 @@
             font-size: 14px;
             font-weight: 600;
             color: #fff;
-            background: linear-gradient(45deg, #4949A3, #7272E9, #4d4dcb);
+            background: linear-gradient(45deg, #1557d0,#275fd2,#003aa2);
             will-change: transform;
+            text-decoration: none;
             transform-origin: 50% 0;
             transition: transform .3s cubic-bezier(.165,.84,.44,1);
             &:hover, &:active, &:focus {
@@ -92,8 +95,9 @@
               font-weight: 600;
               padding: 5px 10px;
               border-radius: 3px;
-              background: linear-gradient(45deg, #4949A3, #7272E9, #4d4dcb);
+              background: linear-gradient(45deg, #1557d0,#275fd2,#003aa2);
               color: #fff;
+              text-decoration: none;
               will-change: transform;
               transform-origin: 50% 0;
               transition: transform .3s cubic-bezier(.165,.84,.44,1);
