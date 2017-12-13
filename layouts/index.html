@@ -25,9 +25,9 @@
 
    <section class="get-installation">
       <div class="container">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="installation-content">
+         <div class="row justify-content-center">
+            <div class="col-md-8">
+               <div class="installation-content text-center">
                   <h2>Quick installation</h2>
                   <P>
                     Download pre-built binaries from <a href="https://github.com/kubepack/pack/releases">kubepack/pack Github releases</a>
@@ -35,50 +35,62 @@
                   </P>
                </div>
             </div>
-            <div class="col-md-8">
-               <div class="installation-pre-area">
-                  <ul class="nav nav-tabs tab-install" role="tablist">
-                     <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
-                     <li><a href="#mac" aria-controls="mac" data-toggle="tab">Mac</a></li>
-                  </ul>
-                  <!-- Tab panes -->
-                  <div class="tab-content tab-install-data">
-                     <div class="tab-pane active" id="linux">
-                        <textarea class="installation-pre-code">
-$ wget -O kubedb https://github.com/kubepack/pack/releases/download/0.7.1/kubedb-linux-amd64 \
-  && chmod +x kubedb \
-  && sudo mv kubedb /usr/local/bin/
+         </div>
+        </br>
+         <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="installation-pre-area">
+                    <ul class="nav nav-tabs tab-install" role="tablist">
+                        <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
+                        <li><a href="#mac" aria-controls="mac" data-toggle="tab">Mac</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content tab-install-data">
+                        <div class="tab-pane active" id="linux">
+                        <pre class="installation-pre-code"><code>$ wget -O kubedb https://github.com/kubepack/pack/releases/download/0.7.1/kubedb-linux-amd64 \
+&& chmod +x kubedb \
+&& sudo mv kubedb /usr/local/bin/
 
-$ kubedb init</textarea>
-                     </div>
-                     <div class="tab-pane" id="mac">
-                        <textarea class="installation-pre-code">
-$ wget -O kubedb https://github.com/kubepack/pack/releases/download/0.7.1/kubedb-darwin-amd64 \
-  && chmod +x kubedb \
-  && sudo mv kubedb /usr/local/bin/
+$ kubedb init</code>
+                        </pre>
+                        </div>
+                        <div class="tab-pane" id="mac">
+                        <pre class="installation-pre-code"><code>$ wget -O kubedb https://github.com/kubepack/pack/releases/download/0.7.1/kubedb-darwin-amd64 \
+&& chmod +x kubedb \
+&& sudo mv kubedb /usr/local/bin/
 
-$ kubedb init</textarea>
-                     </div>
-                  </div>
-               </div>
+$ kubedb init</code></pre>
+                        </div>
+                    </div> <!-- ./Tab panes -->
+                    
+                </div>
             </div>
          </div>
       </div>
    </section>
 
 
-<section>
-   <div class="con"></div>
-</section>
-
-
+   <!-- <hr> -->
 
 <section id="configuration">
    <div class="container">
+
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <div class="installation-content text-center">
+                <h2>Quick installation</h2>
+                <P>
+                Download pre-built binaries from <a href="https://github.com/kubepack/pack/releases">kubepack/pack Github releases</a>
+                and put the binary to some directory in your `PATH`. <a href="https://github.com/kubepack/pack/blob/master/docs/install.md" target="_blank" role="button">Learn more</a>
+                </P>
+            </div>
+        </div>
+    </div> -->
+        
       <div class="row">
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="https://github.com/kubepack/pack/blob/master/docs/tutorials/postgres.md">
+               <a href="#">
                   <div class="cc-icon">
                       <img src="/images/PostgreSQL.svg">
                   </div>
@@ -91,7 +103,7 @@ $ kubedb init</textarea>
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="https://github.com/kubepack/pack/blob/master/docs/tutorials/elasticsearch.md">
+               <a href="#">
                   <div class="cc-icon">
                      <img src="/images/elasticsearch.svg">
                   </div>
@@ -104,7 +116,7 @@ $ kubedb init</textarea>
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="https://github.com/kubepack/pack/blob/master/docs/tutorials/cli.md">
+               <a href="#">
                   <div class="cc-icon">
                      <img src="/images/logo-moscot.svg">
                   </div>
@@ -118,7 +130,7 @@ $ kubedb init</textarea>
 
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="https://github.com/kubepack/pack/blob/master/docs/tutorials/monitoring.md">
+               <a href="#">
                   <div class="cc-icon">
                      <img src="/images/prometheus.svg">
                   </div>
@@ -131,7 +143,7 @@ $ kubedb init</textarea>
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="https://github.com/kubepack/pack/blob/master/docs/tutorials/rbac.md">
+               <a href="#">
                   <div class="cc-icon">
                      <img src="/images/kubernets.svg">
                   </div>

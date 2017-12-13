@@ -1,6 +1,6 @@
 #top-header {
   height: 500px;
-  background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(45deg, #4949A3, #7272E9, #4d4dcb) no-repeat scroll center center/cover;
+  background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(45deg,#1557d0,#275fd2,#003aa2) no-repeat scroll center center/cover;
   .header {
     padding: 80px 0;
 
@@ -8,10 +8,11 @@
       font-size: 30px;
       line-height: 40px;
       margin-bottom: 15px;
-      font-weight: 700;
+      font-weight: 500;
       color: #fff;
       text-transform: capitalize;
       letter-spacing: 1px;
+      font-family: 'Ubuntu', sans-serif;      
     }
 
     > p {
@@ -26,7 +27,7 @@
 // inner-header
 
 #inner-header {
-  background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(45deg,#4949a3,#7272e9,#4d4dcb) no-repeat scroll center center/cover;
+  background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(45deg,#1557d0,#275fd2,#003aa2) no-repeat scroll center center/cover;
   .header {
     padding: 80px 0;
     h1 {
