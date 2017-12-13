@@ -31,8 +31,8 @@
     overflow: hidden;
     width: 100%;
     height: 200px;
-    // border: 1px solid #ddd;
-    box-shadow:0 20px 60px -10px rgba(220, 214, 214, 0.4);
+    border: 1px solid #ddd;
+    // box-shadow:0 20px 60px -10px rgba(220, 214, 214, 0.4);
     .tab-install-data {
       pre.installation-pre-code {
         border: 0;
@@ -53,8 +53,8 @@
     ul.tab-install {
       margin: 0;
       padding: 10px 20px;
-      border: 0;
-      box-shadow: 1px 5px 20px -5px rgba(220,214,214,.2);
+      // border: 0;
+      // box-shadow: 1px 5px 20px -5px rgba(220,214,214,.2);
       li {
         margin-bottom: 0px;
         a {
