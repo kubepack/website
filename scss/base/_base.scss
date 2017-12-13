@@ -6,6 +6,7 @@ body {
   line-height: 30px;
   background: $white;
   font-family: Raleway, sans-serif !important;
+    
 }
 
 p {
@@ -18,6 +19,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   color: $title;
   margin-bottom: 10px;
+  font-family: 'Ubuntu', sans-serif;    
 }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td, button {
