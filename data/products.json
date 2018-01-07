@@ -1,19 +1,13 @@
 {
   "products": {
-    "cli": {
-      "url": "git@github.com:sajibcse68/cli.git",
+    "pack": {
+      "url": "https://github.com/kubepack/pack.git",
       "versions": [
-          {
-              "branch": "master",
-              "isDocsAvailable": false
-          },
-          {
-              "branch": "0.7.2",
-              "isDocsAvailable": true
-          }
+          { "branch": "master", "hostDocs": false },
+          { "branch": "0.1.0-alpha.0", "hostDocs": true }
       ],
-      "latestVersion": "0.7.2",
-      "githubUrl": "https://github.com/sajibcse68/cli"
+      "latestVersion": "0.1.0-alpha.0",
+      "githubUrl": "https://github.com/kubepack/pack"
     }
   }
 }
