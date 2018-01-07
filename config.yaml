@@ -27,25 +27,25 @@ params:
 menu:
   main:
     - Name: "Documentation"
-      Weight: 2
+      Weight: 1
     - Name:
       Pre: "<i class='fa fa-github'></i>"
-      Weight: 3
+      Weight: 2
       Identifier: "GitHub"
       URL: "https://github.com/kubepack"
     - Name:
       Pre: "<i class='fa fa-twitter'></i>"
-      Weight: 4
+      Weight: 3
       Identifier: "twitter"
       URL: "https://twitter.com/Kubepack"
     - Name:
       Pre: "<i class='fa fa-users'></i>"
-      Weight: 5
+      Weight: 4
       Identifier: "groups"
       URL: "https://groups.google.com/forum/#!forum/kubepack"
     - Name:
       Pre: "<i class='fa fa-slack'></i>"
-      Weight: 6
+      Weight: 5
       Identifier: "slack"
       URL: "http://slack.kubernetes.io/"
 
