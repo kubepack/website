@@ -17,42 +17,35 @@ params:
   email: kubepack@appscode.com
   logo: /images/logo.svg
   twitter_url: https://twitter.com/Kubepack
-  slack_url: https://slack.appscode.com/
+  slack_url: http://slack.kubernetes.io/
   issues_url: https://github.com/kubepack/pack/issues/new
   youtube_url: https://www.youtube.com/c/appscode
-  docker_url: https://hub.docker.com/u/kubedb
+  docker_url: https://hub.docker.com/u/kubepack
   contact_email: kubepack@appscode.com
   sales_email: sales@appscode.com
   contact_phone: +1 (650) 241-8486
 menu:
   main:
-    - Name: "Database"
-      identifier: database
-      Weight: 1
-      URL: https://github.com/kubepack/pack/blob/master/docs/install.md
     - Name: "Documentation"
-      Weight: 2
+      Weight: 1
     - Name:
       Pre: "<i class='fa fa-github'></i>"
-      Weight: 3
+      Weight: 2
       Identifier: "GitHub"
       URL: "https://github.com/kubepack"
     - Name:
       Pre: "<i class='fa fa-twitter'></i>"
-      Weight: 4
+      Weight: 3
       Identifier: "twitter"
       URL: "https://twitter.com/Kubepack"
+    - Name:
+      Pre: "<i class='fa fa-users'></i>"
+      Weight: 4
+      Identifier: "groups"
+      URL: "https://groups.google.com/forum/#!forum/kubepack"
     - Name:
       Pre: "<i class='fa fa-slack'></i>"
       Weight: 5
       Identifier: "slack"
       URL: "http://slack.kubernetes.io/"
-    - Name: Elasticsearch
-      identifier: elasticsearch
-      parent: database
-      weight: 10
-    - Name: Postgres
-      identifier: postgres
-      parent: database
-      weight: 20
 
