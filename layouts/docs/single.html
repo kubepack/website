@@ -79,16 +79,43 @@
 
                   <!-- second child -> left menu level 1-->
                   {{ range .Children }}
-                      
+
                       {{ if .HasChildren }}
                         {{ if $hasPreDropdown }}
                           {{ if $currentNode.HasMenuCurrent $menu . }}
                             <ul class="sub-nav">
 
-                              <!-- third child -> left menu level 1  -->
                               {{ range .Children }}
-{{ printf "%v" . }}
-                                <li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}> {{ .Name }}</a></li>
+                                {{ if .HasChildren }}
+                                  <li>
+
+                                    <!-- third child -> left menu level 1  -->
+                                    <a href="#{{ .Identifier }}" data-toggle="collapse" aria-expanded="false" aria-controls="{{ .Identifier }}">
+                                      <i class="fa fa-angle-double-right"></i>{{ .Name }}
+                                    </a>
+
+                                    <ul class="sub-nav collapse in {{if $currentNode.HasMenuCurrent $menu . }} show {{end}}" id="{{ .Identifier }}">
+
+                                      <!-- fourth child -> left menu level 2 -->
+                                      {{ range .Children }}
+
+                                        {{ if ne .Weight -1 }}
+                                          <li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}><i class="fa fa-stop"></i> {{ .Name }}</a></li>
+                                        {{ end }}
+
+                                      {{ end }}
+
+                                    </ul>
+
+                                  </li>
+                                {{ else }}
+
+                                  <!-- third child -> left menu level 1  -->
+                                  {{ if ne .Weight -1 }}
+                                  <li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}>{{ .Name }}</a></li>
+                                  {{ end }}
+
+                                {{ end }}
                               {{ end }}
 
                             </ul>
@@ -106,18 +133,22 @@
 
                                 <!-- third child -> left menu level 2 -->
                                 {{ range .Children }}
-                                  <li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}><i class="fa fa-stop"></i> {{ .Name }}</a></li>
+                                  {{ if ne .Weight -1 }}
+                                    <li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}><i class="fa fa-stop"></i> {{ .Name }}</a></li>
+                                  {{ end }}
                                 {{ end }}
 
                               </ul>
                             </li>
                           </ul>
-                        
+
                         {{ end }}
 
-                      {{ else }}
+                      {{ else if ne .Weight -1 }}
+                        <!-- second child -> left menu level 1-->
                         <ul><li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}>{{ .Name }}</a></li></ul>
-                      {{ end }} <!-- end of menu item rendering -->
+                      {{ end }}
+                      <!-- end of menu item rendering -->
                   {{ end }}
                   <!-- end second child -> left level 1-->
                   
