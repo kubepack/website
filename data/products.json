@@ -1,13 +1,13 @@
 {
   "products": {
     "pack": {
-      "url": "https://github.com/kubepack/pack.git",
+      "url": "https://github.com/kubepack/kubepack.git",
       "versions": [
           { "branch": "master", "hostDocs": false },
           { "branch": "0.1.0-alpha.0", "hostDocs": true }
       ],
       "latestVersion": "0.1.0-alpha.0",
-      "githubUrl": "https://github.com/kubepack/pack"
+      "githubUrl": "https://github.com/kubepack/kubepack"
     }
   }
 }

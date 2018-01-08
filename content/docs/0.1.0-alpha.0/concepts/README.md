@@ -22,5 +22,5 @@ Concepts help you learn about the different parts of the Kubepack and the abstra
 - How It Works
   - [App Publisher](/docs/0.1.0-alpha.0/concepts/how/publisher) Learn to publish apps using Kubepack.
   - [App User](/docs/0.1.0-alpha.0/concepts/how/user). Learn to consume apps published using Kubepack.
-  - [here](/docs/0.1.0-alpha.0/concepts/how/manifest). Explains various aspects of `manifest.yaml` file.
+  - [Kubepack Manifest](/docs/0.1.0-alpha.0/concepts/how/manifest). Explains various aspects of `manifest.yaml` file.
   - [Kubepack CLI](/docs/0.1.0-alpha.0/concepts/how/cli). Learn about `pack` cli.

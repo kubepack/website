@@ -18,7 +18,7 @@ params:
   logo: /images/logo.svg
   twitter_url: https://twitter.com/Kubepack
   slack_url: http://slack.kubernetes.io/
-  issues_url: https://github.com/kubepack/pack/issues/new
+  issues_url: https://github.com/kubepack/kubepack/issues/new
   youtube_url: https://www.youtube.com/c/appscode
   docker_url: https://hub.docker.com/u/kubepack
   contact_email: kubepack@appscode.com
