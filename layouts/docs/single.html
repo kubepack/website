@@ -175,7 +175,21 @@
   </div>
 </section>
 
-    {{ partial "subscribers.html" . }}
+<script language="javascript" type="text/javascript">
+  $(document).ready(function () {
+    function headerLink() {
+      if (this.id) {
+        $(this).prepend('<a href=#' + this.id + ' style="padding:60px 0 10px 0;"><i class="fa fa-link" aria-hidden="true"></i>&nbsp;</a>');
+      }
+    }
+    // $('h1').each(headerLink);
+    $('h2').each(headerLink);
+    $('h3').each(headerLink);
+    $('h4').each(headerLink);
+    $('h5').each(headerLink);
+  });
+</script>
 
+{{ partial "subscribers.html" . }}
 
-    {{ partial "footer.html" . }}
+{{ partial "footer.html" . }}
