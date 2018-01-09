@@ -35,6 +35,7 @@ dependencies:
 ```
 
 See image below, which describe whole dependency.
+
 ![alt text](/docs/0.1.0-alpha.0/_testdata/test-1/test-1.jpg)
 
 Explanation of image:
