@@ -1,6 +1,6 @@
 {
   "products": {
-    "pack": {
+    "kubepack": {
       "url": "https://github.com/kubepack/kubepack.git",
       "versions": [
           { "branch": "master", "hostDocs": false },
