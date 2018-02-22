@@ -17,9 +17,9 @@ aliases:
 
 Guides show you how to perform tasks with Kubepack.
 
-- [Scenario-1](/docs/0.1.0-alpha.0/guides/scenario-1) How Kubepack dependency works.
+- [Scenario-1](/docs/0.1.0-alpha.0/guides/scenario-1) How Kubepack dependency resolution works.
 - [Scenario-2](/docs/0.1.0-alpha.0/guides/scenario-2) Get the dependency and how intermediate patch works.
-- [Scenario-3](/docs/0.1.0-alpha.0/guides/scenario-3) Get the dependency and intermediate repository has patch in same repository. 
+- [Scenario-3](/docs/0.1.0-alpha.0/guides/scenario-3) Direct and transitive dependency patch in same repository. 
 - [Scenario-4](/docs/0.1.0-alpha.0/guides/scenario-4) Main `manifest.yaml` file has double dependency and they are depend on two different contradictory branch. 
 - [Scenario-5](/docs/0.1.0-alpha.0/guides/scenario-5) Main `manifest.yaml` file has double dependency. Both of them have patch of same repository.
 - [Scenario-6](/docs/0.1.0-alpha.0/guides/scenario-6) How kubepack fork works. 
