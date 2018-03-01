@@ -18,7 +18,7 @@ section_menu_id: guides
 ***
 
 This section explain how `jsonnet` appears *Pack*, 
-more complex situation than [scenario-9](./snenario-9)
+more complex situation than [scenario-9](./snenario-9.md)
 
 ![alt text](/docs/0.1.0-alpha.0/_testdata/test-10/test-10.jpg)
 

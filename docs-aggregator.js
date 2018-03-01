@@ -40,13 +40,18 @@ jsonFile.readFile(productFile, function(err, obj) {
             silent: true
           });
 
-          replace({
-            regex: '.md\\)',
-            replacement: ')',
-            paths: [`./repos/${repoName}/docs/`],
-            recursive: true,
-            silent: true
-          });
+          // total hack to force write sync
+          // ref: http://www.daveeddy.com/2013/03/26/synchronous-file-io-in-nodejs/
+          for (i = 0; i < 5; i++) {
+            // .md#xyz) -> #xyz)
+            replace({
+              regex: '(\\(/docs/.*)(\\.md)(#.*)?\\)',
+              replacement: '$1$3)',
+              paths: [`./repos/${repoName}/docs/`],
+              recursive: true,
+              silent: true
+            });
+          }
 
           replace({
             regex: '/docs/images',
