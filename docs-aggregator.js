@@ -8,7 +8,7 @@ const replace = require('replace');
 const fse = require('fs-extra');
 
 jsonFile.readFile(productFile, function(err, obj) {
-  if err {
+  if (err) {
     console.log(err)
   }
   const allProducts = obj.products;

@@ -34,7 +34,7 @@
                   <h2>Quick installation</h2>
                   <P>
                     Download pre-built binaries from <a href="https://github.com/kubepack/kubepack/releases">kubepack/kubepack Github releases</a>
-                    and put the binary to some directory in your `PATH`. <a href="/docs/0.1.0-alpha.0/setup/install/" target="_blank" role="button">Learn more</a>
+                    and put the binary to some directory in your `PATH`. <a href="/docs/0.1.0-alpha.1/setup/install/" target="_blank" role="button">Learn more</a>
                   </P>
                </div>
             </div>
@@ -50,16 +50,18 @@
                     <!-- Tab panes -->
                     <div class="tab-content tab-install-data">
                         <div class="tab-pane active" id="linux">
-                        <pre class="installation-pre-code"><code>$ wget -O pack https://github.com/kubepack/kubepack/releases/download/0.1.0-alpha.0/kubepack-linux-amd64 \
-&& chmod +x pack \
-&& sudo mv pack /usr/local/bin/
+                        <pre class="installation-pre-code"><code>$ wget -O pack https://github.com/kubepack/pack/releases/download/0.1.0-alpha.1/pack-linux-amd64 \
+  && chmod +x pack \
+  && ./pack install \
+  && rm -rf pack
 </code>
                         </pre>
                         </div>
                         <div class="tab-pane" id="mac">
-                        <pre class="installation-pre-code"><code>$ wget -O pack https://github.com/kubepack/kubepack/releases/download/0.1.0-alpha.0/kubepack-darwin-amd64 \
-&& chmod +x pack \
-&& sudo mv pack /usr/local/bin/
+                        <pre class="installation-pre-code"><code>$ wget -O pack https://github.com/kubepack/pack/releases/download/0.1.0-alpha.1/pack-darwin-amd64 \
+  && chmod +x pack \
+  && ./pack install \
+  && rm -rf pack
 </code></pre>
                         </div>
                     </div> <!-- ./Tab panes -->
@@ -91,7 +93,7 @@
       <div class="row">
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.1.0-alpha.0/concepts/how/publisher/">
+               <a href="/docs/0.1.0-alpha.1/concepts/how/publisher/">
                   <div class="cc-icon">
                      <img src="/images/kubernets.svg">
                   </div>
@@ -104,7 +106,7 @@
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.1.0-alpha.0/concepts/how/user/">
+               <a href="/docs/0.1.0-alpha.1/concepts/how/user/">
                   <div class="cc-icon">
                      <img src="/images/elasticsearch.svg">
                   </div>
@@ -117,7 +119,7 @@
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.1.0-alpha.0/concepts/how/cli/">
+               <a href="/docs/0.1.0-alpha.1/concepts/how/cli/">
                   <div class="cc-icon">
                      <img src="/images/logo-moscot.svg">
                   </div>
