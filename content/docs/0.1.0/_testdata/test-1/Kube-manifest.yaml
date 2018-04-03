@@ -1,0 +1,12 @@
+apiVersion: manifest.k8s.io/v1alpha1
+kind: Manifest
+metadata:
+  creationTimestamp: null
+  name: helloworld
+namePrefix: some-prefix
+objectAnnotations:
+  note: This is an example annotation
+objectLabels:
+  app: helloworld
+patches:
+- manifests/patch/github.com/kubepack/kube-b/nginx-b.deployment.apps.yaml
