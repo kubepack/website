@@ -1,0 +1,6 @@
+items:
+- branch: test-1
+  metadata:
+    creationTimestamp: null
+  package: github.com/kubepack/kube-a
+metadata: {}
