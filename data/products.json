@@ -4,10 +4,12 @@
       "url": "https://github.com/kubepack/pack.git",
       "versions": [
           { "branch": "master", "hostDocs": false },
+          { "branch": "0.1.0", "hostDocs": true },
+          { "branch": "0.1.0-alpha.2", "hostDocs": true },
           { "branch": "0.1.0-alpha.1", "hostDocs": true },
           { "branch": "0.1.0-alpha.0", "hostDocs": true }
       ],
-      "latestVersion": "0.1.0-alpha.1",
+      "latestVersion": "0.1.0",
       "githubUrl": "https://github.com/kubepack/pack"
     }
   }
