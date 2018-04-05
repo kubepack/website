@@ -1,38 +1,31 @@
 ---
-title: Pack Wait-Until-Ready Deployment
+title: Pack Tools Ssl Get
 menu:
   docs_0.1.0:
-    identifier: pack-wait-until-ready-deployment
-    name: Pack Wait-Until-Ready Deployment
+    identifier: pack-tools-ssl-get
+    name: Pack Tools Ssl Get
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack wait-until-ready deployment
+## pack tools ssl get
 
-Wait until a deployment is ready
+Get stuff
 
 ### Synopsis
 
-Wait until a deployment is ready
-
-```
-pack wait-until-ready deployment [flags]
-```
+Get stuff
 
 ### Options
 
 ```
-  -h, --help                help for deployment
-      --interval duration   Interval between checks (default 2s)
-      --timeout duration    Timeout (default 3m0s)
+  -h, --help   help for get
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -40,6 +33,7 @@ pack wait-until-ready deployment [flags]
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -62,5 +56,7 @@ pack wait-until-ready deployment [flags]
 
 ### SEE ALSO
 
-* [pack wait-until-ready](/docs/0.1.0/reference/pack_wait-until-ready)	 - Wait until resource is ready
+* [pack tools ssl](/docs/0.1.0/reference/pack_tools_ssl)	 - Utility commands for SSL certificates
+* [pack tools ssl get ca-cert](/docs/0.1.0/reference/pack_tools_ssl_get_ca-cert)	 - Prints self-sgned CA certificate from PEM encoded RSA private key
+* [pack tools ssl get kube-ca](/docs/0.1.0/reference/pack_tools_ssl_get_kube-ca)	 - Prints CA certificate for Kubernetes cluster from Kubeconfig
 

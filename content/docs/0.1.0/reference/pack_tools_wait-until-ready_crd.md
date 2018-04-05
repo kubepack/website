@@ -1,40 +1,37 @@
 ---
-title: Pack Ssl Create Server-Cert
+title: Pack Tools Wait-Until-Ready Crd
 menu:
   docs_0.1.0:
-    identifier: pack-ssl-create-server-cert
-    name: Pack Ssl Create Server-Cert
+    identifier: pack-tools-wait-until-ready-crd
+    name: Pack Tools Wait-Until-Ready Crd
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack ssl create server-cert
+## pack tools wait-until-ready crd
 
-Generate server certificate pair
+Wait until a CRD is ready
 
 ### Synopsis
 
-Generate server certificate pair
+Wait until a CRD is ready
 
 ```
-pack ssl create server-cert [flags]
+pack tools wait-until-ready crd [flags]
 ```
 
 ### Options
 
 ```
-      --cert-dir string       Path to directory where pki files are stored. (default "/home/tamal/go/src/github.com/kubepack/pack/hack/gendocs")
-      --domains stringSlice   Alternative Domain names
-  -h, --help                  help for server-cert
-      --ips ipSlice           Alternative IP addresses (default [127.0.0.1])
-      --overwrite             Overwrite existing cert/key pair
+  -h, --help                help for crd
+      --interval duration   Interval between checks (default 2s)
+      --timeout duration    Timeout (default 3m0s)
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -42,6 +39,7 @@ pack ssl create server-cert [flags]
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -64,5 +62,5 @@ pack ssl create server-cert [flags]
 
 ### SEE ALSO
 
-* [pack ssl create](/docs/0.1.0/reference/pack_ssl_create)	 - create PKI
+* [pack tools wait-until-ready](/docs/0.1.0/reference/pack_tools_wait-until-ready)	 - Wait until resource is ready
 

@@ -1,32 +1,37 @@
 ---
-title: Pack Ssl
+title: Pack Tools Ssl Create Ca-Cert
 menu:
   docs_0.1.0:
-    identifier: pack-ssl
-    name: Pack Ssl
+    identifier: pack-tools-ssl-create-ca-cert
+    name: Pack Tools Ssl Create Ca-Cert
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack ssl
+## pack tools ssl create ca-cert
 
-Utility commands for SSL certificates
+Create CA cert/key pair
 
 ### Synopsis
 
-Utility commands for SSL certificates
+Create CA cert/key pair
+
+```
+pack tools ssl create ca-cert [flags]
+```
 
 ### Options
 
 ```
-  -h, --help   help for ssl
+      --cert-dir string   Path to directory where pki files are stored. (default "/home/tamal/go/src/github.com/kubepack/pack/hack/gendocs")
+  -h, --help              help for ca-cert
+      --overwrite         Overwrite existing cert/key pair
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -34,6 +39,7 @@ Utility commands for SSL certificates
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -56,7 +62,5 @@ Utility commands for SSL certificates
 
 ### SEE ALSO
 
-* [pack](/docs/0.1.0/reference/pack)	 - Secure Lightweight Kubernetes Package Manager
-* [pack ssl create](/docs/0.1.0/reference/pack_ssl_create)	 - create PKI
-* [pack ssl get](/docs/0.1.0/reference/pack_ssl_get)	 - Get stuff
+* [pack tools ssl create](/docs/0.1.0/reference/pack_tools_ssl_create)	 - create PKI
 

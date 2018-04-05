@@ -25,7 +25,6 @@ Secure Lightweight Kubernetes Package Manager
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -33,6 +32,7 @@ Secure Lightweight Kubernetes Package Manager
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
   -h, --help                             help for pack
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
@@ -57,21 +57,13 @@ Secure Lightweight Kubernetes Package Manager
 ### SEE ALSO
 
 * [pack add](/docs/0.1.0/reference/pack_add)	 - Adds configmap/resource/secret to the manifest.
-* [pack base64](/docs/0.1.0/reference/pack_base64)	 - Base64 encode/decode input text
 * [pack dep](/docs/0.1.0/reference/pack_dep)	 - Pulls dependent app manifests
 * [pack edit](/docs/0.1.0/reference/pack_edit)	 - Edit resource definition
-* [pack env](/docs/0.1.0/reference/pack_env)	 - List environment variables
-* [pack envsubst](/docs/0.1.0/reference/pack_envsubst)	 - Emulates bash environment variable substitution for input text
-* [pack has-keys](/docs/0.1.0/reference/pack_has-keys)	 - Checks configmap/secret has a set of given keys
 * [pack init](/docs/0.1.0/reference/pack_init)	 - Initialize kubepack and create manifest.yaml file
-* [pack init](/docs/0.1.0/reference/pack_init)	 - Creates a file called "Kube-manifest.yaml" in the current directory
 * [pack install](/docs/0.1.0/reference/pack_install)	 - Install as kubectl plugin
-* [pack jsonpath](/docs/0.1.0/reference/pack_jsonpath)	 - Print value of jsonpath for input text
-* [pack semver](/docs/0.1.0/reference/pack_semver)	 - Print sanitized semver version
 * [pack set](/docs/0.1.0/reference/pack_set)	 - Sets the value of different fields in manifest.
-* [pack ssl](/docs/0.1.0/reference/pack_ssl)	 - Utility commands for SSL certificates
+* [pack tools](/docs/0.1.0/reference/pack_tools)	 - Tools for managing package life-cycle
 * [pack up](/docs/0.1.0/reference/pack_up)	 - Compiles patches and vendored manifests into final resource definitions
-* [pack validate](/docs/0.1.0/reference/pack_validate)	 - Validate _outlook folder
+* [pack validate](/docs/0.1.0/reference/pack_validate)	 - Validate output folder
 * [pack version](/docs/0.1.0/reference/pack_version)	 - Prints binary version number.
-* [pack wait-until-ready](/docs/0.1.0/reference/pack_wait-until-ready)	 - Wait until resource is ready
 

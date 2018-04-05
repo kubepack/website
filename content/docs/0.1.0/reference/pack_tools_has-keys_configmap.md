@@ -1,38 +1,36 @@
 ---
-title: Pack Ssl Create Ca-Cert
+title: Pack Tools Has-Keys Configmap
 menu:
   docs_0.1.0:
-    identifier: pack-ssl-create-ca-cert
-    name: Pack Ssl Create Ca-Cert
+    identifier: pack-tools-has-keys-configmap
+    name: Pack Tools Has-Keys Configmap
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack ssl create ca-cert
+## pack tools has-keys configmap
 
-Create CA cert/key pair
+Check a configmap has a set of given keys
 
 ### Synopsis
 
-Create CA cert/key pair
+Check a configmap has a set of given keys
 
 ```
-pack ssl create ca-cert [flags]
+pack tools has-keys configmap [flags]
 ```
 
 ### Options
 
 ```
-      --cert-dir string   Path to directory where pki files are stored. (default "/home/tamal/go/src/github.com/kubepack/pack/hack/gendocs")
-  -h, --help              help for ca-cert
-      --overwrite         Overwrite existing cert/key pair
+  -h, --help               help for configmap
+      --keys stringSlice   Keys to search for
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -40,6 +38,7 @@ pack ssl create ca-cert [flags]
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -62,5 +61,5 @@ pack ssl create ca-cert [flags]
 
 ### SEE ALSO
 
-* [pack ssl create](/docs/0.1.0/reference/pack_ssl_create)	 - create PKI
+* [pack tools has-keys](/docs/0.1.0/reference/pack_tools_has-keys)	 - Checks configmap/secret has a set of given keys
 

@@ -1,37 +1,37 @@
 ---
-title: Pack Jsonpath
+title: Pack Tools Semver
 menu:
   docs_0.1.0:
-    identifier: pack-jsonpath
-    name: Pack Jsonpath
+    identifier: pack-tools-semver
+    name: Pack Tools Semver
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack jsonpath
+## pack tools semver
 
-Print value of jsonpath for input text
+Print sanitized semver version
 
 ### Synopsis
 
-Print value of jsonpath for input text
+Print sanitized semver version
 
 ```
-pack jsonpath [flags]
+pack tools semver [flags]
 ```
 
 ### Options
 
 ```
-      --allowMissingKeys   Allow missing keys
-  -h, --help               help for jsonpath
+      --check string   check constraint
+  -h, --help           help for semver
+      --minor          print major.minor.0 version
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -39,6 +39,7 @@ pack jsonpath [flags]
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -61,5 +62,5 @@ pack jsonpath [flags]
 
 ### SEE ALSO
 
-* [pack](/docs/0.1.0/reference/pack)	 - Secure Lightweight Kubernetes Package Manager
+* [pack tools](/docs/0.1.0/reference/pack_tools)	 - Tools for managing package life-cycle
 

@@ -1,37 +1,31 @@
 ---
-title: Pack Has-Keys Configmap
+title: Pack Tools Wait-Until-Ready
 menu:
   docs_0.1.0:
-    identifier: pack-has-keys-configmap
-    name: Pack Has-Keys Configmap
+    identifier: pack-tools-wait-until-ready
+    name: Pack Tools Wait-Until-Ready
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack has-keys configmap
+## pack tools wait-until-ready
 
-Check a configmap has a set of given keys
+Wait until resource is ready
 
 ### Synopsis
 
-Check a configmap has a set of given keys
-
-```
-pack has-keys configmap [flags]
-```
+Wait until resource is ready
 
 ### Options
 
 ```
-  -h, --help               help for configmap
-      --keys stringSlice   Keys to search for
+  -h, --help   help for wait-until-ready
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -39,6 +33,7 @@ pack has-keys configmap [flags]
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -61,5 +56,8 @@ pack has-keys configmap [flags]
 
 ### SEE ALSO
 
-* [pack has-keys](/docs/0.1.0/reference/pack_has-keys)	 - Checks configmap/secret has a set of given keys
+* [pack tools](/docs/0.1.0/reference/pack_tools)	 - Tools for managing package life-cycle
+* [pack tools wait-until-ready apiservice](/docs/0.1.0/reference/pack_tools_wait-until-ready_apiservice)	 - Wait until an apiservice is ready
+* [pack tools wait-until-ready crd](/docs/0.1.0/reference/pack_tools_wait-until-ready_crd)	 - Wait until a CRD is ready
+* [pack tools wait-until-ready deployment](/docs/0.1.0/reference/pack_tools_wait-until-ready_deployment)	 - Wait until a deployment is ready
 

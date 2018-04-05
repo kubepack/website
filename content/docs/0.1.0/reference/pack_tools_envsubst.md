@@ -1,37 +1,35 @@
 ---
-title: Pack Base64
+title: Pack Tools Envsubst
 menu:
   docs_0.1.0:
-    identifier: pack-base64
-    name: Pack Base64
+    identifier: pack-tools-envsubst
+    name: Pack Tools Envsubst
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack base64
+## pack tools envsubst
 
-Base64 encode/decode input text
+Emulates bash environment variable substitution for input text
 
 ### Synopsis
 
-Base64 encode/decode input text
+Emulates bash environment variable substitution for input text
 
 ```
-pack base64 [flags]
+pack tools envsubst [flags]
 ```
 
 ### Options
 
 ```
-      --decode   Decode input text
-  -h, --help     help for base64
+  -h, --help   help for envsubst
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -39,6 +37,7 @@ pack base64 [flags]
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -61,5 +60,5 @@ pack base64 [flags]
 
 ### SEE ALSO
 
-* [pack](/docs/0.1.0/reference/pack)	 - Secure Lightweight Kubernetes Package Manager
+* [pack tools](/docs/0.1.0/reference/pack_tools)	 - Tools for managing package life-cycle
 

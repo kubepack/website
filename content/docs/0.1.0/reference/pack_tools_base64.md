@@ -1,32 +1,36 @@
 ---
-title: Pack Ssl Create
+title: Pack Tools Base64
 menu:
   docs_0.1.0:
-    identifier: pack-ssl-create
-    name: Pack Ssl Create
+    identifier: pack-tools-base64
+    name: Pack Tools Base64
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack ssl create
+## pack tools base64
 
-create PKI
+Base64 encode/decode input text
 
 ### Synopsis
 
-create PKI
+Base64 encode/decode input text
+
+```
+pack tools base64 [flags]
+```
 
 ### Options
 
 ```
-  -h, --help   help for create
+      --decode   Decode input text
+  -h, --help     help for base64
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -34,6 +38,7 @@ create PKI
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -56,8 +61,5 @@ create PKI
 
 ### SEE ALSO
 
-* [pack ssl](/docs/0.1.0/reference/pack_ssl)	 - Utility commands for SSL certificates
-* [pack ssl create ca-cert](/docs/0.1.0/reference/pack_ssl_create_ca-cert)	 - Create CA cert/key pair
-* [pack ssl create client-cert](/docs/0.1.0/reference/pack_ssl_create_client-cert)	 - Generate client certificate pair
-* [pack ssl create server-cert](/docs/0.1.0/reference/pack_ssl_create_server-cert)	 - Generate server certificate pair
+* [pack tools](/docs/0.1.0/reference/pack_tools)	 - Tools for managing package life-cycle
 

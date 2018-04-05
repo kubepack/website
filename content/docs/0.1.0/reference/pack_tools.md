@@ -1,38 +1,31 @@
 ---
-title: Pack Wait-Until-Ready Crd
+title: Pack Tools
 menu:
   docs_0.1.0:
-    identifier: pack-wait-until-ready-crd
-    name: Pack Wait-Until-Ready Crd
+    identifier: pack-tools
+    name: Pack Tools
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack wait-until-ready crd
+## pack tools
 
-Wait until a CRD is ready
+Tools for managing package life-cycle
 
 ### Synopsis
 
-Wait until a CRD is ready
-
-```
-pack wait-until-ready crd [flags]
-```
+Tools for managing package life-cycle
 
 ### Options
 
 ```
-  -h, --help                help for crd
-      --interval duration   Interval between checks (default 2s)
-      --timeout duration    Timeout (default 3m0s)
+  -h, --help   help for tools
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -40,6 +33,7 @@ pack wait-until-ready crd [flags]
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -62,5 +56,12 @@ pack wait-until-ready crd [flags]
 
 ### SEE ALSO
 
-* [pack wait-until-ready](/docs/0.1.0/reference/pack_wait-until-ready)	 - Wait until resource is ready
+* [pack](/docs/0.1.0/reference/pack)	 - Secure Lightweight Kubernetes Package Manager
+* [pack tools base64](/docs/0.1.0/reference/pack_tools_base64)	 - Base64 encode/decode input text
+* [pack tools envsubst](/docs/0.1.0/reference/pack_tools_envsubst)	 - Emulates bash environment variable substitution for input text
+* [pack tools has-keys](/docs/0.1.0/reference/pack_tools_has-keys)	 - Checks configmap/secret has a set of given keys
+* [pack tools jsonpath](/docs/0.1.0/reference/pack_tools_jsonpath)	 - Print value of jsonpath for input text
+* [pack tools semver](/docs/0.1.0/reference/pack_tools_semver)	 - Print sanitized semver version
+* [pack tools ssl](/docs/0.1.0/reference/pack_tools_ssl)	 - Utility commands for SSL certificates
+* [pack tools wait-until-ready](/docs/0.1.0/reference/pack_tools_wait-until-ready)	 - Wait until resource is ready
 

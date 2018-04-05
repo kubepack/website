@@ -1,39 +1,36 @@
 ---
-title: Pack Ssl Create Client-Cert
+title: Pack Tools Ssl Get Ca-Cert
 menu:
   docs_0.1.0:
-    identifier: pack-ssl-create-client-cert
-    name: Pack Ssl Create Client-Cert
+    identifier: pack-tools-ssl-get-ca-cert
+    name: Pack Tools Ssl Get Ca-Cert
     parent: reference
 menu_name: docs_0.1.0
 section_menu_id: reference
 ---
-## pack ssl create client-cert
+## pack tools ssl get ca-cert
 
-Generate client certificate pair
+Prints self-sgned CA certificate from PEM encoded RSA private key
 
 ### Synopsis
 
-Generate client certificate pair
+Prints self-sgned CA certificate from PEM encoded RSA private key
 
 ```
-pack ssl create client-cert [flags]
+pack tools ssl get ca-cert [flags]
 ```
 
 ### Options
 
 ```
-      --cert-dir string       Path to directory where pki files are stored. (default "/home/tamal/go/src/github.com/kubepack/pack/hack/gendocs")
-  -h, --help                  help for client-cert
-  -o, --organization string   Name of client organizations.
-      --overwrite             Overwrite existing cert/key pair
+      --common-name string   Common Name used in CA certificate.
+  -h, --help                 help for ca-cert
 ```
 
 ### Options inherited from parent commands
 
 ```
       --alsologtostderr                  log to standard error as well as files
-      --analytics                        Send analytical events to Google Guard (default true)
       --as string                        Username to impersonate for the operation
       --as-group stringArray             Group to impersonate for the operation, this flag can be repeated to specify multiple groups.
       --certificate-authority string     Path to a cert file for the certificate authority
@@ -41,6 +38,7 @@ pack ssl create client-cert [flags]
       --client-key string                Path to a client key file for TLS
       --cluster string                   The name of the kubeconfig cluster to use
       --context string                   The name of the kubeconfig context to use
+      --enable-analytics                 Send analytical events to Google Guard (default true)
   -f, --file string                      filepath
       --insecure-skip-tls-verify         If true, the server's certificate will not be checked for validity. This will make your HTTPS connections insecure
       --kube-version string              name of the kubeconfig context to use
@@ -63,5 +61,5 @@ pack ssl create client-cert [flags]
 
 ### SEE ALSO
 
-* [pack ssl create](/docs/0.1.0/reference/pack_ssl_create)	 - create PKI
+* [pack tools ssl get](/docs/0.1.0/reference/pack_tools_ssl_get)	 - Get stuff
 

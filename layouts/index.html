@@ -52,16 +52,14 @@
                         <div class="tab-pane active" id="linux">
                         <pre class="installation-pre-code"><code>$ wget -O pack https://github.com/kubepack/pack/releases/download/0.1.0/pack-linux-amd64 \
   && chmod +x pack \
-  && ./pack install \
-  && rm -rf pack
+  && sudo mv pack /usr/local/bin/
 </code>
                         </pre>
                         </div>
                         <div class="tab-pane" id="mac">
                         <pre class="installation-pre-code"><code>$ wget -O pack https://github.com/kubepack/pack/releases/download/0.1.0/pack-darwin-amd64 \
   && chmod +x pack \
-  && ./pack install \
-  && rm -rf pack
+  && sudo mv pack /usr/local/bin/
 </code></pre>
                         </div>
                     </div> <!-- ./Tab panes -->
