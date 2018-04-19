@@ -21,7 +21,7 @@ const sassLint = require('gulp-sass-lint');
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const merge = require('merge-stream');
-const notifier = require('gulp-notify');
+const notify = require('gulp-notify');
 const sass = require('gulp-sass');
 const htmlreplace = require('gulp-html-replace');
 
@@ -251,7 +251,7 @@ gulp.task('hugo:prod', () => {
     for (const line of lines) {
       gutil.log(gutil.colors.red(`Error [hugo:prod]: ${line}`));
     }
-    notifier.notify({
+    notify({
       title: 'Error (go install)',
       message: lines
     });
@@ -270,7 +270,7 @@ gulp.task('hugo:dev', () => {
       gutil.log(gutil.colors.red(`Error [hugo:prod]: ${line}`));
     }
 
-    notifier.notify({
+    notify({
       title: 'Error (go install)',
       message: lines
     });
