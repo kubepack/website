@@ -65,9 +65,8 @@
         </ul>
 
         {{ $urlToken := (split .File.Path "/") }}
-        <a class="edit-thisPage" href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 2) }} {{- range after 2 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank">
-          <i class="fa fa-github"></i> Edit this page
-        </a>
+        <a href="{{ index $productJson "githubUrl"}}/stargazers" target="_blank"><button class="btn btn-outline-success"><i class="fa fa-star"></i> GitHub</button></a>&nbsp;&nbsp;
+        <a href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 2) }} {{- range after 2 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank"><button class="btn btn-outline-success"><i class="fa fa-pencil"></i> Improve page </button></a>
       {{ end }}
 
       </div>
