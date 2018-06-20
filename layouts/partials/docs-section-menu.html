@@ -44,10 +44,12 @@
                 <ul id="versions" class="dropdown-menu">
                   {{ range $version := $versions }}
                     {{ $branch := (index $version "branch") }}
-                    {{ if (index $version "hostDocs") }}
-                      <li {{ if eq $branch $currentBranch }} class="active" {{ end }} ><a href="/docs/{{ $branch }}/">{{ $branch }}</a></li>
-                    {{ else }}
-                      <li><a href="{{ index $productJson "githubUrl" }}/tree/{{ $branch }}/docs" target="_blank">{{ $branch }}</a></li>
+                    {{ if (index $version "v-dropdown") }}
+                      {{ if (index $version "hostDocs") }}
+                        <li {{ if eq $branch $currentBranch }} class="active" {{ end }} ><a href="/docs/{{ $branch }}/">{{ $branch }}</a></li>
+                      {{ else }}
+                        <li><a href="{{ index $productJson "githubUrl" }}/tree/{{ $branch }}/docs" target="_blank">{{ $branch }}</a></li>
+                      {{ end }}
                     {{ end }}
                   {{ end }}
                 </ul>
