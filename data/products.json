@@ -3,8 +3,8 @@
     "pack": {
       "url": "https://github.com/kubepack/pack.git",
       "versions": [
-          { "branch": "master", "hostDocs": false },
-          { "branch": "0.1.0", "hostDocs": true },
+          { "branch": "master", "hostDocs": false, "v-dropdown": true },
+          { "branch": "0.1.0", "hostDocs": true, "v-dropdown": true },
           { "branch": "0.1.0-alpha.2", "hostDocs": true },
           { "branch": "0.1.0-alpha.1", "hostDocs": true },
           { "branch": "0.1.0-alpha.0", "hostDocs": true }
