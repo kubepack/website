@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "kubepack-com"
+    "default": "appscode-domains"
+  },
+  "targets": {
+    "appscode-domains": {
+      "hosting": {
+        "hugo": [
+          "kubepack-prod"
+        ]
+      }
+    }
   }
 }

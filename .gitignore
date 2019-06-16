@@ -12,3 +12,4 @@ layouts/onebox/single.html
 layouts/signup/single.html
 rev-manifest.json
 repos/
+/.firebase
