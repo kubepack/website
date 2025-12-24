@@ -12,7 +12,7 @@
     "featherlight": "^1.4.0",
     "font-awesome": "^4.5.0",
     "html5shiv": "^3.7.3",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "jquery-validation": "^1.15.0",
     "respond.js": "^1.4.2"
   },
