@@ -29,7 +29,7 @@
     "gulp-install": "^0.6.0",
     "gulp-notify": "^3.0.0",
     "gulp-rev": "^7.1.2",
-    "gulp-sass": "^2.1.0",
+    "gulp-sass": "^6.0.1",
     "gulp-sass-lint": "^1.1.0",
     "gulp-util": "^3.0.7",
     "gulp-wait": "^0.0.2",
