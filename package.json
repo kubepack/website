@@ -34,7 +34,7 @@
     "gulp-util": "^3.0.7",
     "gulp-wait": "^0.0.2",
     "js-cookie": "^2.1.2",
-    "lodash": "^4.16.4",
+    "lodash": "^4.18.1",
     "merge-stream": "^1.0.0",
     "popper.js": "^1.11.0",
     "replace": "^0.3.0",
